@@ -1,0 +1,33 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<Version>2.1.1</Version>
+	<AssemblyVersion>2.1.1</AssemblyVersion>
+	<FileVersion>2.1.1</FileVersion>
+	<SignAssembly>False</SignAssembly>
+	
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERPWebAPI.Core\ERPWebAPI.Core.csproj" />
+    <ProjectReference Include="..\ERPWebAPI.DAL\ERPWebAPI.DAL.csproj" />
+    <ProjectReference Include="..\ERPWebAPI.EL\ERPWebAPI.EL.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Autofac" Version="7.1.0" />
+    <PackageReference Include="Autofac.Extensions.DependencyInjection" Version="8.0.0" />
+    <PackageReference Include="Autofac.Extras.DynamicProxy" Version="7.1.0" />
+    <PackageReference Include="Castle.Core" Version="5.1.1" />
+    <PackageReference Include="FluentValidation" Version="11.7.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Abstract\PRF\" />
+    <Folder Include="Concrete\PRF\" />
+  </ItemGroup>
+
+</Project>
