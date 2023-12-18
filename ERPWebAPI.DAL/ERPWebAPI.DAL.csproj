@@ -18,9 +18,4 @@
     <ProjectReference Include="..\ERPWebAPI.EL\ERPWebAPI.EL.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstract\PRF\" />
-    <Folder Include="Concrete\PRF\" />
-  </ItemGroup>
-
 </Project>
