@@ -5,10 +5,10 @@
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
     <OutputType>WinExe</OutputType>
-    <Version>2.0.1</Version>
-    <AssemblyVersion>2.0.1</AssemblyVersion>
+    <Version>2.1.1</Version>
+    <AssemblyVersion>2.1.1</AssemblyVersion>
     <GeneratePackageOnBuild>False</GeneratePackageOnBuild>
-    <FileVersion>2.0.1</FileVersion>
+    <FileVersion>2.1.1</FileVersion>
     <UserSecretsId>01ea2f90-b0ae-4973-bd4b-50ba94be4c98</UserSecretsId>
   </PropertyGroup>
 
@@ -24,10 +24,6 @@
     <ProjectReference Include="..\ERPWebAPI.BL\ERPWebAPI.BL.csproj" />
     <ProjectReference Include="..\ERPWebAPI.DAL\ERPWebAPI.DAL.csproj" />
     <ProjectReference Include="..\ERPWebAPI.EL\ERPWebAPI.EL.csproj" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <Folder Include="Controllers\PRF\" />
   </ItemGroup>
 
 </Project>
