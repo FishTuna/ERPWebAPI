@@ -15,10 +15,11 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public string COMPANY_NAME { get; set; }
         public string LOCATION_NAME { get; set; }
         public string COST_CENTER_NAME { get; set; }
-        public string DEPARTMENT_NAME { get; set; }
+        public string DEPARTMENT_NAME { get; set; } 
         public string JOB_NAME { get; set; }
         public short POSITION_ID { get; set; }
         public string POSITION_NAME { get; set; }
         public string COLLAR_NAME { get; set; }
+        public string? PHOTO_PATH {  get; set; }
     }
 }
