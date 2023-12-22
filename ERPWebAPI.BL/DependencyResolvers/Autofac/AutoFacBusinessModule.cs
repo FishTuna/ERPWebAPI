@@ -252,6 +252,28 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             #endregion OHS
 
             #region PRF
+            builder.RegisterType<PRF_cmb_AnswerRatingDal>().As<IPRF_cmb_AnswerRatingDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_AnswerRatingManager>().As<IPRF_cmb_AnswerRatingService<PRF_cmb_AnswerRating, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_AnswerRatingGroupDal>().As<IPRF_cmb_AnswerRatingGroupDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_AnswerRatingGroupManager>().As<IPRF_cmb_AnswerRatingGroupService<PRF_cmb_AnswerRatingGroup, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_PeriodDal>().As<IPRF_cmb_PeriodDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_PeriodManager>().As<IPRF_cmb_PeriodService<PRF_cmb_Period, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_QuestionGroupDal>().As<IPRF_cmb_QuestionGroupDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_QuestionGroupManager>().As<IPRF_cmb_QuestionGroupService<PRF_cmb_QuestionGroup, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_QuestionTypeDal>().As<IPRF_cmb_QuestionTypeDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_QuestionTypeManager>().As<IPRF_cmb_QuestionTypeService<PRF_cmb_QuestionType, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_AnswerDal>().As<IPRF_tbl_AnswerDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_AnswerManager>().As<IPRF_tbl_AnswerService<PRF_tbl_Answer, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_EvaluationDal>().As<IPRF_tbl_EvaluationDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_EvaluationManager>().As<IPRF_tbl_EvaluationService<PRF_tbl_Evaluation, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_EmployeeListDal>().As<IPRF_tbl_EmployeeListDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_EmployeeListManager>().As<IPRF_tbl_EmployeeListService<PRF_tbl_EmployeeList, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_PeriodMatchDal>().As<IPRF_tbl_PeriodMatchDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_PeriodMatchManager>().As<IPRF_tbl_PeriodMatchService<PRF_tbl_PeriodMatch, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_QuestionDal>().As<IPRF_tbl_QuestionDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_QuestionManager>().As<IPRF_tbl_QuestionService<PRF_tbl_Question, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_QuestionGroupMatchDal>().As<IPRF_tbl_QuestionGroupMatchDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_QuestionGroupMatchManager>().As<IPRF_tbl_QuestionGroupMatchService<PRF_tbl_QuestionGroupMatch, SqlResult>>().SingleInstance();
 
             builder.RegisterType<PRF_cmb_AnswerRatingDal>().As<IPRF_cmb_AnswerRatingDal>().SingleInstance();
             builder.RegisterType<PRF_cmb_AnswerRatingManager>().As<IPRF_cmb_AnswerRatingService<PRF_cmb_AnswerRating, SqlResult>>().SingleInstance();

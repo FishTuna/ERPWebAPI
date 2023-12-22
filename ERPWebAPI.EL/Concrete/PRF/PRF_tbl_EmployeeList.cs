@@ -20,6 +20,5 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public short POSITION_ID { get; set; }
         public string POSITION_NAME { get; set; }
         public string COLLAR_NAME { get; set; }
-        public string? PHOTO_PATH { get; set; }
     }
 }
