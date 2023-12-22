@@ -6,6 +6,7 @@ using ERPWebAPI.EL.Concrete.GRAPHS;
 using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete.LGN;
 using ERPWebAPI.EL.Concrete.OHS;
+using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete.TA;
 using ERPWebAPI.EL.Dtos;
@@ -137,6 +138,18 @@ namespace ERPWebAPI.DAL.Concrete
         #endregion OHS
 
         #region PRF
+
+        public DbSet<PRF_tbl_EmployeeList> PrfEmployeesList { get; set; }
+        public DbSet<PRF_cmb_AnswerRating> PrfAnswerRatingsList { get; set; }
+        public DbSet<PRF_cmb_AnswerRatingGroup> PrfAnswerRatingGroupsList { get; set; }
+        public DbSet<PRF_cmb_Period> PrfPeriodsList { get; set; }
+        public DbSet<PRF_cmb_QuestionGroup> PrfQuestionGroupsList { get; set; }
+        public DbSet<PRF_cmb_QuestionType> PrfQuestionTypesList { get; set; }
+        public DbSet<PRF_tbl_Answer> PrfAnswersList { get; set; }
+        public DbSet<PRF_tbl_Evaluation> PrfEvaluationsList { get; set; }
+        public DbSet<PRF_tbl_PeriodMatch> PrfPeriodMatchesList { get; set; }
+        public DbSet<PRF_tbl_Question> PrfQuestionsList { get; set; }
+        public DbSet<PRF_tbl_QuestionGroupMatch> PrfQuestionGrpoupMatchesList { get; set; }
 
         #endregion PRF
 

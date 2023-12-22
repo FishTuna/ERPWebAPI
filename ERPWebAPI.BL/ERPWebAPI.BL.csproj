@@ -25,9 +25,4 @@
     <PackageReference Include="FluentValidation" Version="11.7.1" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Abstract\PRF\" />
-    <Folder Include="Concrete\PRF\" />
-  </ItemGroup>
-
 </Project>
