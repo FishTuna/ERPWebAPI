@@ -10,6 +10,9 @@ namespace ERPWebAPI.EL.Concrete.PRF
         [Key]
         public int PERIOD_ID { get; set; }
         public string PERIOD_COMMENT { get; set; }
+        public short GROUP_ID { get; set; }
+        public string GROUP_NAME { get; set; }
+        public bool IS_GROUP_ACTIVE { get; set; }
         public DateTime PERIOD_BEGINING { get; set; }
         public DateTime PERIOD_ENDING { get; set; }
         public DateTime PERIOD_SCOPE_START { get; set; }
