@@ -149,6 +149,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<PRF_tbl_Evaluation> PrfEvaluationsList { get; set; }
         public DbSet<PRF_tbl_PeriodMatch> PrfPeriodMatchesList { get; set; }
         public DbSet<PRF_tbl_Question> PrfQuestionsList { get; set; }
+        public DbSet<PRF_tbl_Score> PrfScoresList { get; set; }
         public DbSet<PRF_tbl_QuestionGroupMatch> PrfQuestionGrpoupMatchesList { get; set; }
 
         #endregion PRF

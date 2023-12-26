@@ -252,6 +252,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             #endregion OHS
 
             #region PRF
+
             builder.RegisterType<PRF_cmb_AnswerRatingDal>().As<IPRF_cmb_AnswerRatingDal>().SingleInstance();
             builder.RegisterType<PRF_cmb_AnswerRatingManager>().As<IPRF_cmb_AnswerRatingService<PRF_cmb_AnswerRating, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_cmb_AnswerRatingGroupDal>().As<IPRF_cmb_AnswerRatingGroupDal>().SingleInstance();
@@ -297,6 +298,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<PRF_tbl_QuestionManager>().As<IPRF_tbl_QuestionService<PRF_tbl_Question, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_QuestionGroupMatchDal>().As<IPRF_tbl_QuestionGroupMatchDal>().SingleInstance();
             builder.RegisterType<PRF_tbl_QuestionGroupMatchManager>().As<IPRF_tbl_QuestionGroupMatchService<PRF_tbl_QuestionGroupMatch, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_ScoreDal>().As<IPRF_tbl_ScoreDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_ScoreManager>().As<IPRF_tbl_ScoreService<PRF_tbl_Score, SqlResult>>().SingleInstance();
 
             #endregion PRF
 
