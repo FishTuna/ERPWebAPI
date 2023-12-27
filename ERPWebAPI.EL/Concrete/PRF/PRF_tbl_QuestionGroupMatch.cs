@@ -15,6 +15,7 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public byte QUESTION_TYPE_ID { get; set; }
         public string QUESTION_TYPE { get; set; }
         public bool IS_QUESTION_TYPE_ACTIVE { get; set;}
+        public int QUESTION_ID { get; set; }
         public string QUESTION { get; set; }
         public bool IS_ACTIVE { get; set;}
         public string LOGIN_NAME { get;set; }
