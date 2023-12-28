@@ -19,7 +19,7 @@ namespace ERPWebAPI.BL.Concrete.PRF
             _pRF_tbl_ScoreDal = pRF_tbl_ScoreDal;
         }
 
-        [CacheAspect]
+        //[CacheAspect]
         //[ValidationAspect(typeof(CollarValidator))]
         //[PerformanceAspect(15)]
         public IDataResult<List<PRF_tbl_Score>> GetAllDataMngr(string module, string target, string point, string parameters)

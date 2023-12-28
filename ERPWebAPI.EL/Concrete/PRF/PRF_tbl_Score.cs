@@ -8,6 +8,7 @@ namespace ERPWebAPI.EL.Concrete.PRF
     public class PRF_tbl_Score :IEntity
     {
         [Key]
+        public int SCORE_ID { get; set; }
         public int EMPLOYEE_ID { get; set; }
         public int PERIOD_ID { get; set; }
         public string PERIOD_COMMENT { get; set; }
