@@ -20,9 +20,9 @@ namespace ERPWebAPI.Controllers.SYS
         [HttpGet("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataReader,Admin")]
         [Authorize(Roles = "SYS,Admin")]
-        public IActionResult GetAll([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
+        public IActionResult Get([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _FunctionResultService.GetAllDataMngr(module, target, point, parameters);
+            var result = _FunctionResultService.GetDataMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);

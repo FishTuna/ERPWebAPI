@@ -13,6 +13,7 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public string QUESTION { get; set; }
         public byte RATING_GROUP_ID { get; set; }
         public string RATING_GROUP_NAME { get; set; }
+        public byte RATING_ID { get; set; }
         public bool IS_ACTIVE { get; set; }
         public string LOGIN_NAME { get; set; }
         public int USER_EMPLOYEE_ID { get; set; }

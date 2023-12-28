@@ -29,6 +29,17 @@ namespace ERPWebAPI.BL.Concrete.SYS
             return new SuccessDataResult<List<SYS_SqlFunctionResult>>(_sYS_FunctionResultDal.GetAllDataDal(module, target, point, parameters), Messages.Listed);
         }
 
+        public IDataResult<SYS_SqlFunctionResult> GetDataMngr(string module, string target, string point, string parameters)
+        {
+            ///kurallar private mwthod olarak eklenecek aşağpıya
+            //IDataResult<SqlResult> result = BusinessRules.Run();
+            //if (result != null)
+            //{
+            //    return result;
+            //}
+            return new SuccessDataResult<SYS_SqlFunctionResult>(_sYS_FunctionResultDal.GetAllDataDal(module, target, point, parameters).First(), Messages.Listed);
+        }
+
         public IDataResult<SqlResult> ResultOperationsMngr(string module, string target, string point, string parameters)
         {
             var result = _sYS_FunctionResultDal.ResultOperationsDal(module, target, point, parameters);
@@ -38,5 +49,7 @@ namespace ERPWebAPI.BL.Concrete.SYS
             }
             return new SuccessDataResult<SqlResult>(result);
         }
+
+        
     }
 }
