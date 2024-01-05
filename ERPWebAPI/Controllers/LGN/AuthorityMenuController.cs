@@ -29,7 +29,7 @@ namespace ERPWebAPI.Controllers.LGN
             }
             return BadRequest(result.Data);
         }
-        
+
         [HttpPut("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataWriter,Admin")]
         [Authorize(Roles = "LGN,Admin")]
@@ -42,7 +42,7 @@ namespace ERPWebAPI.Controllers.LGN
             }
             return BadRequest(result.Data);
         }
-        
+
         [HttpPost("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataWriter,Admin")]
         [Authorize(Roles = "LGN,Admin")]

@@ -1,9 +1,9 @@
 ﻿
-using ERPWebAPI.EL.Concrete.HR;
+using ERPWebAPI.DAL.Concrete.HR;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.HR;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ERPWebAPI.DAL.Concrete.HR;
 
 namespace ERPWebAPI.Controllers.HR
 {
