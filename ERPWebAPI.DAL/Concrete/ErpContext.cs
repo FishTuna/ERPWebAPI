@@ -9,7 +9,6 @@ using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete.TA;
-using ERPWebAPI.EL.Dtos;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete

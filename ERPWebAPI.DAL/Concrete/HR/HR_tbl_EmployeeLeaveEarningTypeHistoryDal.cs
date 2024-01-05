@@ -1,13 +1,13 @@
 ﻿
 
 using ERPWebAPI.DAL.Abstract.HR;
-using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.HR;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.HR
 {
-    public  class HR_tbl_EmployeeLeaveEarningTypeHistoryDal : IHR_tbl_EmployeeLeaveEarningTypeHistoryDal
+    public class HR_tbl_EmployeeLeaveEarningTypeHistoryDal : IHR_tbl_EmployeeLeaveEarningTypeHistoryDal
     {
         public List<HR_tbl_EmployeeLeaveEarningTypeHistory> GetAllDataDal(string module, string target, string point, string parameters)
         {

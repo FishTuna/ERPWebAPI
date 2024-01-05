@@ -1,8 +1,8 @@
 ﻿
 
 using Core.DataAccess;
-using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.OHS;
 
 namespace ERPWebAPI.DAL.Abstract.OHS
 {

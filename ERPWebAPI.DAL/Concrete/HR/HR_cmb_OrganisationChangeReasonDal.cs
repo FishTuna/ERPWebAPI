@@ -1,6 +1,6 @@
 ﻿using ERPWebAPI.DAL.Abstract.HR;
-using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.HR;
 using Microsoft.EntityFrameworkCore;
 namespace ERPWebAPI.DAL.Concrete.HR
 {

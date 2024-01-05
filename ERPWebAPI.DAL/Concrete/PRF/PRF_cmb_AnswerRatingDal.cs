@@ -1,7 +1,7 @@
 ﻿
 using ERPWebAPI.DAL.Abstract.PRF;
-using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.PRF;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.PRF

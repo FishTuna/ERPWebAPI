@@ -1,8 +1,8 @@
 ﻿
 
 using Core.DataAccess;
-using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.HR;
 
 namespace ERPWebAPI.DAL.Abstract.HR
 {

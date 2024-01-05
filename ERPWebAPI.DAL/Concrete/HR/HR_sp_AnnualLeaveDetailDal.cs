@@ -1,7 +1,7 @@
-﻿using ERPWebAPI.EL.Concrete.HR;
+﻿using ERPWebAPI.DAL.Abstract.HR;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.HR;
 using Microsoft.EntityFrameworkCore;
-using ERPWebAPI.DAL.Abstract.HR;
 
 namespace ERPWebAPI.DAL.Concrete.HR
 {
