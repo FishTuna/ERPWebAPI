@@ -9,8 +9,8 @@ namespace ERPWebAPI.EL.Concrete.PRF
     {
         [Key]
         public short PROCESS_TYPE_ID { get; set; }
-        public string PROCESS_TYPE_NAME { get; set; }
-        public int USER_EMPLOYEE_ID { get; set; }
-        public DateTime TRANSACTION_DATE { get; set; }
+		public string PROCESS_TYPE_NAME { get; set; }
+		public int USER_EMPLOYEE_ID { get; set; }
+		public DateTime TRANSACTION_DATE { get; set; }
     }
 }
