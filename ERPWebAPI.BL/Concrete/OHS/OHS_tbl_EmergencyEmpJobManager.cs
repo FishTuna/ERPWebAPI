@@ -3,8 +3,8 @@ using Core.Utilities.Results;
 using ERPWebAPI.BL.Constants;
 using ERPWebAPI.DAL.Abstract.OHS;
 using ERPWebAPI.DAL.Concrete.OHS;
-using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.OHS;
 
 namespace ERPWebAPI.BL.Concrete.OHS
 {

@@ -3,8 +3,8 @@ using Core.Utilities.Results;
 using ERPWebAPI.BL.Abstract.PRF;
 using ERPWebAPI.BL.Constants;
 using ERPWebAPI.DAL.Abstract.PRF;
-using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.PRF;
 
 namespace ERPWebAPI.BL.Concrete.PRF
 {

@@ -3,8 +3,8 @@ using Core.Utilities.Results;
 using ERPWebAPI.BL.Abstract.TA;
 using ERPWebAPI.BL.Constants;
 using ERPWebAPI.DAL.Abstract.TA;
-using ERPWebAPI.EL.Concrete.TA;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.TA;
 
 namespace ERPWebAPI.BL.Concrete.TA
 {

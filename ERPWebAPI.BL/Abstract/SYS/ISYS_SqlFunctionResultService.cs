@@ -2,7 +2,6 @@
 
 using Core.BL;
 using Core.Utilities.Results;
-using ERPWebAPI.EL.Concrete.SYS;
 
 namespace ERPWebAPI.BL.Abstract.SYS
 {

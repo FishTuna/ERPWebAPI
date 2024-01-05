@@ -4,12 +4,12 @@ using Core.Utilities.Results;
 using ERPWebAPI.BL.Abstract.SYS;
 using ERPWebAPI.BL.Constants;
 using ERPWebAPI.DAL.Abstract.SYS;
-using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.SYS;
 
 namespace ERPWebAPI.BL.Concrete.SYS
 {
-    public  class SYS_SqlFunctionResultManager : ISYS_SqlFunctionResultService<SYS_SqlFunctionResult, SqlResult>
+    public class SYS_SqlFunctionResultManager : ISYS_SqlFunctionResultService<SYS_SqlFunctionResult, SqlResult>
     {
         private readonly ISYS_SqlFunctionResultDal _sYS_FunctionResultDal;
 
@@ -50,6 +50,6 @@ namespace ERPWebAPI.BL.Concrete.SYS
             return new SuccessDataResult<SqlResult>(result);
         }
 
-        
+
     }
 }

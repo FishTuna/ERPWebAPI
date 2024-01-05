@@ -1,5 +1,4 @@
 ﻿using Core.BL;
-using Core.Utilities.Results;
 
 namespace ERPWebAPI.BL.Abstract.HR
 {
