@@ -13,7 +13,7 @@ namespace ERPWebAPI.DAL.Concrete.PRF
         {
             using (ErpContext context = new ErpContext())
             {
-                var result = context.PrfQuestionGroupsList.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
+                var result = context.PrfQuestionGroups.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
         }

@@ -1,4 +1,5 @@
 ﻿
+
 using ERPWebAPI.DAL.Abstract.PRF;
 using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete;
@@ -6,13 +7,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.PRF
 {
-    public class PRF_cmb_AnswerRatingDal : IPRF_cmb_AnswerRatingDal
+    public class PRF_tbl_OrganizationScoreCardDal : IPRF_tbl_OrganizationScoreCardDal
     {
-        public List<PRF_cmb_AnswerRating> GetAllDataDal(string module, string target, string point, string parameters)
+        public List<PRF_tbl_OrganizationScoreCard> GetAllDataDal(string module, string target, string point, string parameters)
         {
             using (ErpContext context = new ErpContext())
             {
-                var result = context.PrfAnswerRatings.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
+                var result = context.PrfOrganizationScoreCards.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
         }

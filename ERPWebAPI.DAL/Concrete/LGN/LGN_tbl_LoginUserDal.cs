@@ -11,7 +11,7 @@ namespace ERPWebAPI.DAL.Concrete.LGN
         {
             using (ErpContext context = new ErpContext())
             {
-                var result = context.SysAppLogins.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
+                var result = context.LgnLoginUsers.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
         }

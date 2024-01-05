@@ -1,18 +1,19 @@
 ﻿
-using ERPWebAPI.DAL.Abstract.PRF;
-using ERPWebAPI.EL.Concrete.PRF;
+
+using ERPWebAPI.DAL.Abstract.SYS;
+using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete;
 using Microsoft.EntityFrameworkCore;
 
-namespace ERPWebAPI.DAL.Concrete.PRF
+namespace ERPWebAPI.DAL.Concrete.SYS
 {
-    public class PRF_cmb_AnswerRatingDal : IPRF_cmb_AnswerRatingDal
+    public class SYS_cmb_YearListDal : ISYS_cmb_YearListDal
     {
-        public List<PRF_cmb_AnswerRating> GetAllDataDal(string module, string target, string point, string parameters)
+        public List<SYS_cmb_YearList> GetAllDataDal(string module, string target, string point, string parameters)
         {
             using (ErpContext context = new ErpContext())
             {
-                var result = context.PrfAnswerRatings.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
+                var result = context.SysYearsList.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
         }
