@@ -8,13 +8,13 @@ namespace ERPWebAPI.Controllers.PRF
 {
     [Route("api/PRF/[controller]")]
     [ApiController]
-    public class PeriodController : ControllerBase
+    public class OrganizationStrategyController : ControllerBase
     {
-        readonly IPRF_cmb_PeriodService<PRF_cmb_Period, SqlResult> _cmb_PeriodService;
+        readonly IPRF_cmb_OrganizationStrategyService<PRF_cmb_OrganizationStrategy, SqlResult> _cmb_OrganizationStrategyService;
 
-        public PeriodController(IPRF_cmb_PeriodService<PRF_cmb_Period, SqlResult> cmb_PeriodService)
+        public OrganizationStrategyController(IPRF_cmb_OrganizationStrategyService<PRF_cmb_OrganizationStrategy, SqlResult> cmb_OrganizationStrategyService)
         {
-            _cmb_PeriodService = cmb_PeriodService;
+            _cmb_OrganizationStrategyService = cmb_OrganizationStrategyService;
         }
 
         [HttpGet("{module}/{target}/{point}/{parameters}")]
@@ -22,7 +22,7 @@ namespace ERPWebAPI.Controllers.PRF
         [Authorize(Roles = "PRF,Admin")]
         public IActionResult GetAll([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _cmb_PeriodService.GetAllDataMngr(module, target, point, parameters);
+            var result = _cmb_OrganizationStrategyService.GetAllDataMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -35,7 +35,7 @@ namespace ERPWebAPI.Controllers.PRF
         [Authorize(Roles = "PRF,Admin")]
         public IActionResult Insert([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _cmb_PeriodService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _cmb_OrganizationStrategyService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -48,7 +48,7 @@ namespace ERPWebAPI.Controllers.PRF
         [Authorize(Roles = "PRF,Admin")]
         public IActionResult Update([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _cmb_PeriodService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _cmb_OrganizationStrategyService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -61,7 +61,7 @@ namespace ERPWebAPI.Controllers.PRF
         [Authorize(Roles = "PRF,Admin")]
         public IActionResult Delete([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _cmb_PeriodService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _cmb_OrganizationStrategyService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);

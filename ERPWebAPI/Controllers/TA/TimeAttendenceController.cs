@@ -1,6 +1,6 @@
 ﻿using ERPWebAPI.BL.Abstract.TA;
-using ERPWebAPI.EL.Concrete.TA;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.TA;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

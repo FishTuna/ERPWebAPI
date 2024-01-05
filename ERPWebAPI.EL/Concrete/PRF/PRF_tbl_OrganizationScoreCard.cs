@@ -22,6 +22,7 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public float TARGET { get; set; }
         public short UNIT_TYPE_ID { get; set; }
         public string UNIT_TYPE { get; set; }
+        public float ACTUALIZATION_TOTAL { get; set; }
         public float ACTUALIZATION_RATIO { get; set; }
         public byte BENCMARK_SCORE { get; set; }
         public float OCAK { get; set; }

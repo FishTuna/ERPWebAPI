@@ -1,6 +1,6 @@
 ﻿using ERPWebAPI.BL.Abstract.PRF;
-using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.PRF;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
