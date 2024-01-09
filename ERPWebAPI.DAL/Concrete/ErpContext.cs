@@ -98,6 +98,8 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<SYS_cmb_DatePeriodType> SysDatePeriodTypes { get; set; }
         public DbSet<SYS_cmb_DocumentType> SysDocumentTypes { get; set; }
         public DbSet<SYS_SessionAuthority> SysSessionAuthorities { get; set; }
+        public DbSet<SYS_EmployeeOrganizationPyramid> SysEmployeeOrganizationPyramid { get; set; }
+        public DbSet<SYS_OrganizationPyramid> SysOrganizationPyramid { get; set; }
         public DbSet<SYS_tbl_UserPrivacyClassification> SysUserPrivacyClassifications { get; set; }
         public DbSet<SYS_tbl_Document> SysDocuments { get; set; }
         public DbSet<SYS_tbl_OrganisationPyramidMatch> SysOrganisationPyramidMatches { get; set; }

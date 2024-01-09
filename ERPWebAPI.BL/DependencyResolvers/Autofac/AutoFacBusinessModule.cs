@@ -182,6 +182,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<LGN_tbl_LoginUserManager>().As<ILGN_tbl_LoginUserService<LGN_tbl_LoginUser, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_SessionAuthorityDal>().As<ISYS_SessionAuthorityDal>().SingleInstance();
             builder.RegisterType<SYS_SessionAuthorityManager>().As<ISYS_SessionAuthorityService<SYS_SessionAuthority, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_OrganizationPyramidDal>().As<ISYS_OrganizationPyramidDal>().SingleInstance();
+            builder.RegisterType<SYS_OrganizationPyramidManager>().As<ISYS_OrganizationPyramidService<SYS_OrganizationPyramid, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_EmployeeOrganizationPyramidDal>().As<ISYS_EmployeeOrganizationPyramidDal>().SingleInstance();
+            builder.RegisterType<SYS_EmployeeOrganizationPyramidManager>().As<ISYS_EmployeeOrganizationPyramidService<SYS_EmployeeOrganizationPyramid, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_ClassificationTypeDal>().As<ISYS_cmb_ClassificationTypeDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_ClassificationTypeManager>().As<ISYS_cmb_ClassificationTypeService<SYS_cmb_ClassificationType, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_DatePeriodTypeDal>().As<ISYS_cmb_DatePeriodTypeDal>().SingleInstance();
