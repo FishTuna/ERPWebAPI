@@ -1,9 +1,12 @@
-﻿using Core.Entities;
+﻿
+using Core.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.SYS
 {
     public class SYS_OrganizationPyramid:IEntity
     {
+        [Key]
         public Int64 ROW_NUMBER { get; set; }
         public int TABLE_COLUMN_ID { get; set; }
         public string FIELD_NAME { get; set; }
