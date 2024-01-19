@@ -17,5 +17,6 @@ namespace ERPWebAPI.EL.Concrete.DASHBOARD
         public string VALUE8 { get; set; }
         public string VALUE9 { get; set; }
         public string VALUE10 { get; set; }
+        public bool IS_READED { get; set; }
     }
 }
