@@ -1,8 +1,8 @@
 ﻿
 
 using ERPWebAPI.DAL.Abstract.PRF;
-using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.PRF;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.PRF
@@ -13,7 +13,7 @@ namespace ERPWebAPI.DAL.Concrete.PRF
         {
             using (ErpContext context = new ErpContext())
             {
-                var result = context.PrfQuestionGrpoupMatchesList.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
+                var result = context.PrfQuestionGrpoupMatches.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
         }

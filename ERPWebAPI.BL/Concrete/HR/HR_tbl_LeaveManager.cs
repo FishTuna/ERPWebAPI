@@ -41,6 +41,6 @@ namespace ERPWebAPI.BL.Concrete.HR
             return new SuccessDataResult<SqlResult>(result);
         }
 
-        
+
     }
 }

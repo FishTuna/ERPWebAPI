@@ -4,7 +4,7 @@ using ERPWebAPI.EL.Concrete.SYS;
 
 namespace ERPWebAPI.DAL.Abstract.SYS
 {
-    public interface ISYS_cmb_CmbTableDal :ICommonDalOperations<SYS_cmb_CmbTable, SqlResult>
+    public interface ISYS_cmb_CmbTableDal : ICommonDalOperations<SYS_cmb_CmbTable, SqlResult>
     {
     }
 }

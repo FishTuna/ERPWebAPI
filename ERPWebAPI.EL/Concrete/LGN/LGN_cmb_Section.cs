@@ -10,6 +10,6 @@ namespace ERPWebAPI.EL.Concrete.LGN
         [Key]
         public int SECTION_ID { get; set; }
         public string SECTION_NAME { get; set; }
-        public int MODULE_ID { get; set; }
+        public byte MODULE_ID { get; set; }
     }
 }

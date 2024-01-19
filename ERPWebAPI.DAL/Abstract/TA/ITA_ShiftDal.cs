@@ -6,7 +6,7 @@ using ERPWebAPI.EL.Concrete.TA;
 
 namespace ERPWebAPI.DAL.Abstract.TA
 {
-    public interface ITA_ShiftDal :ICommonDalOperations<TA_Shift, SqlResult>
+    public interface ITA_ShiftDal : ICommonDalOperations<TA_Shift, SqlResult>
     {
     }
 }

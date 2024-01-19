@@ -1,8 +1,8 @@
 ﻿
 
 using ERPWebAPI.DAL.Abstract.SYS;
-using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.SYS;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.SYS

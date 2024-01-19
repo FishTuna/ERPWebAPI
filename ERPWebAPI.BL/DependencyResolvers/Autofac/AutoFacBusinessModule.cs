@@ -182,6 +182,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<LGN_tbl_LoginUserManager>().As<ILGN_tbl_LoginUserService<LGN_tbl_LoginUser, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_SessionAuthorityDal>().As<ISYS_SessionAuthorityDal>().SingleInstance();
             builder.RegisterType<SYS_SessionAuthorityManager>().As<ISYS_SessionAuthorityService<SYS_SessionAuthority, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_OrganizationPyramidDal>().As<ISYS_OrganizationPyramidDal>().SingleInstance();
+            builder.RegisterType<SYS_OrganizationPyramidManager>().As<ISYS_OrganizationPyramidService<SYS_OrganizationPyramid, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_EmployeeOrganizationPyramidDal>().As<ISYS_EmployeeOrganizationPyramidDal>().SingleInstance();
+            builder.RegisterType<SYS_EmployeeOrganizationPyramidManager>().As<ISYS_EmployeeOrganizationPyramidService<SYS_EmployeeOrganizationPyramid, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_ClassificationTypeDal>().As<ISYS_cmb_ClassificationTypeDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_ClassificationTypeManager>().As<ISYS_cmb_ClassificationTypeService<SYS_cmb_ClassificationType, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_DatePeriodTypeDal>().As<ISYS_cmb_DatePeriodTypeDal>().SingleInstance();
@@ -200,7 +204,15 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_SqlFunctionResultManager>().As<ISYS_SqlFunctionResultService<SYS_SqlFunctionResult, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_CmbTableDal>().As<ISYS_cmb_CmbTableDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_CmbTableManager>().As<ISYS_cmb_CmbTableService<SYS_cmb_CmbTable, SqlResult>>().SingleInstance();
-            
+            builder.RegisterType<SYS_cmb_UnitTypeDal>().As<ISYS_cmb_UnitTypeDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_UnitTypeManager>().As<ISYS_cmb_UnitTypeService<SYS_cmb_UnitType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_UnitTypeGroupDal>().As<ISYS_cmb_UnitTypeGroupDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_UnitTypeGroupManager>().As<ISYS_cmb_UnitTypeGroupService<SYS_cmb_UnitTypeGroup, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_YearListDal>().As<ISYS_cmb_YearListDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_YearListManager>().As<ISYS_cmb_YearListService<SYS_cmb_YearList, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_MonthListDal>().As<ISYS_cmb_MonthListDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_MonthListManager>().As<ISYS_cmb_MonthListService<SYS_cmb_MonthList, SqlResult>>().SingleInstance();
+
 
 
             #endregion
@@ -252,6 +264,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             #endregion OHS
 
             #region PRF
+
             builder.RegisterType<PRF_cmb_AnswerRatingDal>().As<IPRF_cmb_AnswerRatingDal>().SingleInstance();
             builder.RegisterType<PRF_cmb_AnswerRatingManager>().As<IPRF_cmb_AnswerRatingService<PRF_cmb_AnswerRating, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_cmb_AnswerRatingGroupDal>().As<IPRF_cmb_AnswerRatingGroupDal>().SingleInstance();
@@ -297,6 +310,18 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<PRF_tbl_QuestionManager>().As<IPRF_tbl_QuestionService<PRF_tbl_Question, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_QuestionGroupMatchDal>().As<IPRF_tbl_QuestionGroupMatchDal>().SingleInstance();
             builder.RegisterType<PRF_tbl_QuestionGroupMatchManager>().As<IPRF_tbl_QuestionGroupMatchService<PRF_tbl_QuestionGroupMatch, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_ScoreDal>().As<IPRF_tbl_ScoreDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_ScoreManager>().As<IPRF_tbl_ScoreService<PRF_tbl_Score, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_TargetTypeDal>().As<IPRF_cmb_TargetTypeDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_TargetTypeManager>().As<IPRF_cmb_TargetTypeService<PRF_cmb_TargetType, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_ProcessTypeDal>().As<IPRF_cmb_ProcessTypeDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_ProcessTypeManager>().As<IPRF_cmb_ProcessTypeService<PRF_cmb_ProcessType, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_cmb_OrganizationStrategyDal>().As<IPRF_cmb_OrganizationStrategyDal>().SingleInstance();
+            builder.RegisterType<PRF_cmb_OrganizationStrategyManager>().As<IPRF_cmb_OrganizationStrategyService<PRF_cmb_OrganizationStrategy, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_OrganizationScoreCardDal>().As<IPRF_tbl_OrganizationScoreCardDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_OrganizationScoreCardManager>().As<IPRF_tbl_OrganizationScoreCardService<PRF_tbl_OrganizationScoreCard, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_tbl_OrganizationTargetDal>().As<IPRF_tbl_OrganizationTargetDal>().SingleInstance();
+            builder.RegisterType<PRF_tbl_OrganizationTargetManager>().As<IPRF_tbl_OrganizationTargetService<PRF_tbl_OrganizationTarget, SqlResult>>().SingleInstance();
 
             #endregion PRF
 

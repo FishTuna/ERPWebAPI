@@ -1,7 +1,7 @@
 ﻿
 using ERPWebAPI.DAL.Concrete.OHS;
-using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.OHS;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 

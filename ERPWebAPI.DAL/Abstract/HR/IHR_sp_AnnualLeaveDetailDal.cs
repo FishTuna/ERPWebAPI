@@ -4,7 +4,7 @@ using ERPWebAPI.EL.Concrete.HR;
 
 namespace ERPWebAPI.DAL.Abstract.HR
 {
-    public interface IHR_sp_AnnualLeaveDetailDal :ICommonDalOperations<HR_sp_AnnualLeaveDetail, SqlResult>
+    public interface IHR_sp_AnnualLeaveDetailDal : ICommonDalOperations<HR_sp_AnnualLeaveDetail, SqlResult>
     {
 
     }

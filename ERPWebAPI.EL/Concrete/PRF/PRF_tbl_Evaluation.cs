@@ -18,6 +18,8 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public string QUESTION {  get; set; }
         public int ANSWER_ID { get; set; }
         public string ANSWER {  get; set; }
+        public byte RATING_ID { get; set; }
+        public string RATING_NAME { get; set; }
         public byte SCORE {  get; set; }
         public byte STATUS_ID { get; set; }
         public string STATUS_NAME { get; set; }

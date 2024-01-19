@@ -2,7 +2,7 @@
 
 namespace ERPWebAPI.BL.Abstract.HR
 {
-    public  interface IHR_cmb_LeaveEarningTypeService<TEntity, TSqlResult> : ICommonBLOperationsService<TEntity, TSqlResult>
+    public interface IHR_cmb_LeaveEarningTypeService<TEntity, TSqlResult> : ICommonBLOperationsService<TEntity, TSqlResult>
     {
     }
 }

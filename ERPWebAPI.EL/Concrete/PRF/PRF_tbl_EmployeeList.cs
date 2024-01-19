@@ -17,6 +17,7 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public string COST_CENTER_NAME { get; set; }
         public string DEPARTMENT_NAME { get; set; } 
         public string JOB_NAME { get; set; }
+        public short TITLE_ID { get; set; }
         public short POSITION_ID { get; set; }
         public string POSITION_NAME { get; set; }
         public string COLLAR_NAME { get; set; }

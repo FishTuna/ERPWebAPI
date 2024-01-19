@@ -9,13 +9,13 @@ namespace ERPWebAPI.DAL.Concrete.HR
     {
         public List<HR_tbl_Leave> GetAllDataDal(string module, string target, string point, string parameters)
         {
-          
+
             using (ErpContext context = new ErpContext())
             {
                 var result = context.HrLeaves.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
-            
+
         }
         public SqlResult ResultOperationsDal(string module, string target, string point, string parameters)
         {

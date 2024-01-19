@@ -1,9 +1,9 @@
 ﻿
 
-using ERPWebAPI.EL.Concrete;
-using Microsoft.EntityFrameworkCore;
 using ERPWebAPI.DAL.Abstract.TA;
+using ERPWebAPI.EL.Concrete;
 using ERPWebAPI.EL.Concrete.TA;
+using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.TA
 {

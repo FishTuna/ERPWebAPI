@@ -1,6 +1,6 @@
 ﻿using Core.DataAccess;
-using ERPWebAPI.EL.Concrete.TA;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.TA;
 
 namespace ERPWebAPI.DAL.Abstract.TA
 {

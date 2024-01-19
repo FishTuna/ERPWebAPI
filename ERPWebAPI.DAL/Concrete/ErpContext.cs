@@ -9,7 +9,6 @@ using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete.PRF;
 using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete.TA;
-using ERPWebAPI.EL.Dtos;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete
@@ -99,16 +98,22 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<SYS_cmb_DatePeriodType> SysDatePeriodTypes { get; set; }
         public DbSet<SYS_cmb_DocumentType> SysDocumentTypes { get; set; }
         public DbSet<SYS_SessionAuthority> SysSessionAuthorities { get; set; }
-        public DbSet<LGN_tbl_LoginUser> SysAppLogins { get; set; }
+        public DbSet<SYS_EmployeeOrganizationPyramid> SysEmployeeOrganizationPyramid { get; set; }
+        public DbSet<SYS_OrganizationPyramid> SysOrganizationPyramid { get; set; }
         public DbSet<SYS_tbl_UserPrivacyClassification> SysUserPrivacyClassifications { get; set; }
         public DbSet<SYS_tbl_Document> SysDocuments { get; set; }
         public DbSet<SYS_tbl_OrganisationPyramidMatch> SysOrganisationPyramidMatches { get; set; }
         public DbSet<SYS_cmb_OrganisationPyramidTitle> SysOrganisationPyramidTitles { get; set; }
         public DbSet<SYS_SqlFunctionResult> SysFunctionResults { get; set; }
+        public DbSet<SYS_cmb_UnitType> SysUnitTypes { get; set; }
+        public DbSet<SYS_cmb_UnitTypeGroup> SysUnitTypeGroups { get; set; }
+        public DbSet<SYS_cmb_YearList> SysYearsList { get; set; }
+        public DbSet<SYS_cmb_MonthList> SysMonthsList { get; set; }
 
         #endregion
 
         #region LGN
+        public DbSet<LGN_tbl_LoginUser> LgnLoginUsers { get; set; }
         public DbSet<LGN_cmb_Menu> LngMenus { get; set; }
         public DbSet<LGN_cmb_Role> LgnRoles { get; set; }
         public DbSet<LGN_cmb_Section> LgnSections { get; set; }
@@ -140,16 +145,22 @@ namespace ERPWebAPI.DAL.Concrete
         #region PRF
 
         public DbSet<PRF_tbl_EmployeeList> PrfEmployeesList { get; set; }
-        public DbSet<PRF_cmb_AnswerRating> PrfAnswerRatingsList { get; set; }
-        public DbSet<PRF_cmb_AnswerRatingGroup> PrfAnswerRatingGroupsList { get; set; }
-        public DbSet<PRF_cmb_Period> PrfPeriodsList { get; set; }
-        public DbSet<PRF_cmb_QuestionGroup> PrfQuestionGroupsList { get; set; }
-        public DbSet<PRF_cmb_QuestionType> PrfQuestionTypesList { get; set; }
-        public DbSet<PRF_tbl_Answer> PrfAnswersList { get; set; }
-        public DbSet<PRF_tbl_Evaluation> PrfEvaluationsList { get; set; }
-        public DbSet<PRF_tbl_PeriodMatch> PrfPeriodMatchesList { get; set; }
-        public DbSet<PRF_tbl_Question> PrfQuestionsList { get; set; }
-        public DbSet<PRF_tbl_QuestionGroupMatch> PrfQuestionGrpoupMatchesList { get; set; }
+        public DbSet<PRF_cmb_AnswerRating> PrfAnswerRatings { get; set; }
+        public DbSet<PRF_cmb_AnswerRatingGroup> PrfAnswerRatingGroups { get; set; }
+        public DbSet<PRF_cmb_Period> PrfPeriods { get; set; }
+        public DbSet<PRF_cmb_QuestionGroup> PrfQuestionGroups { get; set; }
+        public DbSet<PRF_cmb_QuestionType> PrfQuestionTypes { get; set; }
+        public DbSet<PRF_cmb_TargetType> PrfTargetTypes { get; set; }
+        public DbSet<PRF_cmb_ProcessType> PrfProcessTypes { get; set; }
+        public DbSet<PRF_cmb_OrganizationStrategy> PrfOrganizationStrategies { get; set; }
+        public DbSet<PRF_tbl_Answer> PrfAnswers { get; set; }
+        public DbSet<PRF_tbl_Evaluation> PrfEvaluations { get; set; }
+        public DbSet<PRF_tbl_PeriodMatch> PrfPeriodMatches { get; set; }
+        public DbSet<PRF_tbl_Question> PrfQuestions { get; set; }
+        public DbSet<PRF_tbl_Score> PrfScores { get; set; }
+        public DbSet<PRF_tbl_QuestionGroupMatch> PrfQuestionGrpoupMatches { get; set; }
+        public DbSet<PRF_tbl_OrganizationScoreCard> PrfOrganizationScoreCards { get; set; }
+        public DbSet<PRF_tbl_OrganizationTarget> PrfOrganizationTargets { get; set; }
 
         #endregion PRF
 
