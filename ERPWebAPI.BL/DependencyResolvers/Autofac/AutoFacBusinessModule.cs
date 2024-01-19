@@ -164,6 +164,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             #endregion
 
             #region SYS
+
             builder.RegisterType<SYS_cmb_CityDal>().As<ISYS_cmb_CityDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_CityManager>().As<ISYS_cmb_CityService<SYS_cmb_City, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_CountryDal>().As<ISYS_cmb_CountryDal>().SingleInstance();
@@ -212,6 +213,14 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_cmb_YearListManager>().As<ISYS_cmb_YearListService<SYS_cmb_YearList, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_MonthListDal>().As<ISYS_cmb_MonthListDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_MonthListManager>().As<ISYS_cmb_MonthListService<SYS_cmb_MonthList, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SendedSmsListDal>().As<ISYS_tbl_SendedSmsListDal>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SendedSmsListManager>().As<ISYS_tbl_SendedSmsListService<SYS_tbl_SendedSmsList, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsReturnNodeDal>().As<ISYS_cmb_SmsReturnNodeDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsReturnNodeManager>().As<ISYS_cmb_SmsReturnNodeService<SYS_cmb_SmsReturnNode, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_tbl_EmployeeForSmsDal>().As<ISYS_tbl_EmployeeForSmsDal>().SingleInstance();
+            builder.RegisterType<SYS_tbl_EmployeeForSmsManager>().As<ISYS_tbl_EmployeeForSmsService<SYS_tbl_EmployeeForSms, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SmlOperationDal>().As<ISYS_tbl_SmlOperationDal>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SmlOperationManager>().As<ISYS_tbl_SmlOperationService<SYS_tbl_SmlOperation, SqlResult>>().SingleInstance();
 
 
 

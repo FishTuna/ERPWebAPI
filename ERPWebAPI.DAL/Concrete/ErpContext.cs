@@ -109,6 +109,10 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<SYS_cmb_UnitTypeGroup> SysUnitTypeGroups { get; set; }
         public DbSet<SYS_cmb_YearList> SysYearsList { get; set; }
         public DbSet<SYS_cmb_MonthList> SysMonthsList { get; set; }
+        public DbSet<SYS_cmb_SmsReturnNode> SysSmsReturnNodeList { get; set; }
+        public DbSet<SYS_tbl_SmlOperation> SysSmlOperationList { get; set; }
+        public DbSet<SYS_tbl_SendedSmsList> SysSendedSmsList { get; set; }
+        public DbSet<SYS_tbl_EmployeeForSms> SysEmployeeForSmsList { get; set; }
 
         #endregion
 
