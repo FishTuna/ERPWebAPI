@@ -221,6 +221,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_tbl_EmployeeForSmsManager>().As<ISYS_tbl_EmployeeForSmsService<SYS_tbl_EmployeeForSms, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_tbl_SmlOperationDal>().As<ISYS_tbl_SmlOperationDal>().SingleInstance();
             builder.RegisterType<SYS_tbl_SmlOperationManager>().As<ISYS_tbl_SmlOperationService<SYS_tbl_SmlOperation, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsTemplateDal>().As<ISYS_cmb_SmsTemplateDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsTemplateManager>().As<ISYS_cmb_SmsTemplateService<SYS_cmb_SmsTemplate, SqlResult>>().SingleInstance();
 
 
 
