@@ -348,8 +348,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
 
             builder.RegisterType<RPT_ReportParamDal>().As<IRPT_ReportParamDal>().SingleInstance();
             builder.RegisterType<RPT_ReportParamManager>().As<IRPT_ReportParamService<RPT_ReportParam, SqlResult>>().SingleInstance();
-            builder.RegisterType<RPT_ReportParamDal>().As<IRPT_ReportParamDal>().SingleInstance();
-            builder.RegisterType<RPT_ReportParamManager>().As<IRPT_ReportParamService<RPT_ReportParam, SqlResult>>().SingleInstance();
+            builder.RegisterType<RPT_ReportListDal>().As<IRPT_ReportListDal>().SingleInstance();
+            builder.RegisterType<RPT_ReportListManager>().As<IRPT_ReportListService<RPT_ReportList, SqlResult>>().SingleInstance();
             builder.RegisterType<RPT_ReportParamContentDal>().As<IRPT_ReportParamContentDal>().SingleInstance();
             builder.RegisterType<RPT_ReportParamContentManager>().As<IRPT_ReportParamContentService<RPT_ReportParamContent, SqlResult>>().SingleInstance();
 

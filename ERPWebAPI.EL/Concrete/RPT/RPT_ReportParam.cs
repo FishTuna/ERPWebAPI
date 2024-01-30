@@ -12,5 +12,6 @@ namespace ERPWebAPI.EL.Concrete.RPT
         public string PARAM_TYPE_NAME { get; set; }
         public string? TABLE_NAME { get; set; }
         public bool IS_MULTISELECT { get; set; }
+        public byte PARAM_ORDER { get; set; }
     }
 }

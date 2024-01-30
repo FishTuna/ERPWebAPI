@@ -19,7 +19,7 @@ namespace ERPWebAPI.Controllers.RPT
         }
 
         [HttpGet("{module}/{target}/{point}/{parameters}")]
-        [Authorize(Roles = "DataReader,Admin")]
+        [Authorize(Roles = "DataReader,DataWriter,Admin")]
         [Authorize(Roles = "RPT,Admin")]
         public IActionResult GetAll([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
