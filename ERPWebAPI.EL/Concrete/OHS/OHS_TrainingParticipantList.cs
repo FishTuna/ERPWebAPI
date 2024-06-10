@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.OHS
 {
-    public class OHS_TrainingParticipentList : IEntity
+    public class OHS_TrainingParticipantList : IEntity
     {
         [Key]
         public int TrainingId { get; set; }
