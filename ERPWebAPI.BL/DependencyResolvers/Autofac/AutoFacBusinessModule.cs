@@ -9,6 +9,7 @@ using ERPWebAPI.BL.Abstract.GRAPH;
 using ERPWebAPI.BL.Abstract.HR;
 using ERPWebAPI.BL.Abstract.LGN;
 using ERPWebAPI.BL.Abstract.PRF;
+using ERPWebAPI.BL.Abstract.RPT;
 using ERPWebAPI.BL.Abstract.Session;
 using ERPWebAPI.BL.Abstract.SYS;
 using ERPWebAPI.BL.Abstract.TA;
@@ -19,6 +20,7 @@ using ERPWebAPI.BL.Concrete.HR;
 using ERPWebAPI.BL.Concrete.LGN;
 using ERPWebAPI.BL.Concrete.OHS;
 using ERPWebAPI.BL.Concrete.PRF;
+using ERPWebAPI.BL.Concrete.RPT;
 using ERPWebAPI.BL.Concrete.Session;
 using ERPWebAPI.BL.Concrete.SYS;
 using ERPWebAPI.BL.Concrete.TA;
@@ -29,6 +31,7 @@ using ERPWebAPI.DAL.Abstract.HR;
 using ERPWebAPI.DAL.Abstract.LGN;
 using ERPWebAPI.DAL.Abstract.OHS;
 using ERPWebAPI.DAL.Abstract.PRF;
+using ERPWebAPI.DAL.Abstract.RPT;
 using ERPWebAPI.DAL.Abstract.Session;
 using ERPWebAPI.DAL.Abstract.SYS;
 using ERPWebAPI.DAL.Abstract.TA;
@@ -39,6 +42,7 @@ using ERPWebAPI.DAL.Concrete.HR;
 using ERPWebAPI.DAL.Concrete.LGN;
 using ERPWebAPI.DAL.Concrete.OHS;
 using ERPWebAPI.DAL.Concrete.PRF;
+using ERPWebAPI.DAL.Concrete.RPT;
 using ERPWebAPI.DAL.Concrete.Session;
 using ERPWebAPI.DAL.Concrete.SYS;
 using ERPWebAPI.DAL.Concrete.TA;
@@ -49,6 +53,7 @@ using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete.LGN;
 using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete.PRF;
+using ERPWebAPI.EL.Concrete.RPT;
 using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete.TA;
 using Microsoft.AspNetCore.Http;
@@ -164,6 +169,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             #endregion
 
             #region SYS
+
             builder.RegisterType<SYS_cmb_CityDal>().As<ISYS_cmb_CityDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_CityManager>().As<ISYS_cmb_CityService<SYS_cmb_City, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_CountryDal>().As<ISYS_cmb_CountryDal>().SingleInstance();
@@ -212,6 +218,16 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_cmb_YearListManager>().As<ISYS_cmb_YearListService<SYS_cmb_YearList, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_MonthListDal>().As<ISYS_cmb_MonthListDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_MonthListManager>().As<ISYS_cmb_MonthListService<SYS_cmb_MonthList, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SendedSmsListDal>().As<ISYS_tbl_SendedSmsListDal>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SendedSmsListManager>().As<ISYS_tbl_SendedSmsListService<SYS_tbl_SendedSmsList, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsReturnNodeDal>().As<ISYS_cmb_SmsReturnNodeDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsReturnNodeManager>().As<ISYS_cmb_SmsReturnNodeService<SYS_cmb_SmsReturnNode, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_tbl_EmployeeForSmsDal>().As<ISYS_tbl_EmployeeForSmsDal>().SingleInstance();
+            builder.RegisterType<SYS_tbl_EmployeeForSmsManager>().As<ISYS_tbl_EmployeeForSmsService<SYS_tbl_EmployeeForSms, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SmlOperationDal>().As<ISYS_tbl_SmlOperationDal>().SingleInstance();
+            builder.RegisterType<SYS_tbl_SmlOperationManager>().As<ISYS_tbl_SmlOperationService<SYS_tbl_SmlOperation, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsTemplateDal>().As<ISYS_cmb_SmsTemplateDal>().SingleInstance();
+            builder.RegisterType<SYS_cmb_SmsTemplateManager>().As<ISYS_cmb_SmsTemplateService<SYS_cmb_SmsTemplate, SqlResult>>().SingleInstance();
 
 
 
@@ -324,6 +340,20 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<PRF_tbl_OrganizationTargetManager>().As<IPRF_tbl_OrganizationTargetService<PRF_tbl_OrganizationTarget, SqlResult>>().SingleInstance();
 
             #endregion PRF
+
+            #region RPT
+
+            builder.RegisterType<RPT_DynamicReportResultDal>().As<IRPT_DynamicReportResultDal>().SingleInstance();
+            builder.RegisterType<RPT_DynamicReportResultManager>().As<IRPT_DynamicReportResultService>().SingleInstance();
+
+            builder.RegisterType<RPT_ReportParamDal>().As<IRPT_ReportParamDal>().SingleInstance();
+            builder.RegisterType<RPT_ReportParamManager>().As<IRPT_ReportParamService<RPT_ReportParam, SqlResult>>().SingleInstance();
+            builder.RegisterType<RPT_ReportListDal>().As<IRPT_ReportListDal>().SingleInstance();
+            builder.RegisterType<RPT_ReportListManager>().As<IRPT_ReportListService<RPT_ReportList, SqlResult>>().SingleInstance();
+            builder.RegisterType<RPT_ReportParamContentDal>().As<IRPT_ReportParamContentDal>().SingleInstance();
+            builder.RegisterType<RPT_ReportParamContentManager>().As<IRPT_ReportParamContentService<RPT_ReportParamContent, SqlResult>>().SingleInstance();
+
+            #endregion RPT
 
             builder.RegisterType<UserManager>().As<IUserService>();
             builder.RegisterType<UserDal>().As<IUserDal>();

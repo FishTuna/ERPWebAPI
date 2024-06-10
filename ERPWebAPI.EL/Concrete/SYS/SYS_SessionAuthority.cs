@@ -13,6 +13,7 @@ namespace ERPWebAPI.EL.Concrete.SYS
         public string ROLE_NAME { get; set; }
         public byte MODULE_ID { get; set; }
         public string MODULE_NAME { get; set; }
+        public string MODULECODE {  get; set; }
         public byte MODULE_AUTHORITY { get; set; }
         public int MENU_ID { get; set; }
         public string MENU_NAME { get; set; }

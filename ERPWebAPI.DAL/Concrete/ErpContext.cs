@@ -7,6 +7,7 @@ using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete.LGN;
 using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete.PRF;
+using ERPWebAPI.EL.Concrete.RPT;
 using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete.TA;
 using Microsoft.EntityFrameworkCore;
@@ -30,6 +31,7 @@ namespace ERPWebAPI.DAL.Concrete
                          $"Password = {PasswordCodder.Base64Decode(DbConnectionInfo.Password)};" +
                          $"Encrypt={DbConnectionInfo.Encrypt}");
         }
+
         #region DashBoard
         public DbSet<CommonGraph> CommonGraphs { get; set; }
         public DbSet<DashBoardElement> DashBoardElements { get; set; }
@@ -109,6 +111,11 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<SYS_cmb_UnitTypeGroup> SysUnitTypeGroups { get; set; }
         public DbSet<SYS_cmb_YearList> SysYearsList { get; set; }
         public DbSet<SYS_cmb_MonthList> SysMonthsList { get; set; }
+        public DbSet<SYS_cmb_SmsReturnNode> SysSmsReturnNodeList { get; set; }
+        public DbSet<SYS_tbl_SmlOperation> SysSmlOperationList { get; set; }
+        public DbSet<SYS_tbl_SendedSmsList> SysSendedSmsList { get; set; }
+        public DbSet<SYS_tbl_EmployeeForSms> SysEmployeeForSmsList { get; set; }
+        public DbSet<SYS_cmb_SmsTemplate> SysSmsTemplates { get; set; }
 
         #endregion
 
@@ -163,6 +170,14 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<PRF_tbl_OrganizationTarget> PrfOrganizationTargets { get; set; }
 
         #endregion PRF
+
+        #region RPT
+
+        public DbSet<RPT_ReportList> RptReportsList { get; set; }
+        public DbSet<RPT_ReportParam> RptReportParams { get; set; }
+        public DbSet<RPT_ReportParamContent> RptReportParamContents { get; set; }
+
+        #endregion RPT
 
         public DbSet<SqlResult> sqlResults { get; set; }
     }
