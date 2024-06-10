@@ -7,7 +7,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ERPWebAPI.Controllers.RPT
 {
-    [Route("api/RPT[controller]")]
+    [Route("api/RPT/[controller]")]
     [ApiController]
     public class ReportParamController : ControllerBase
     {
