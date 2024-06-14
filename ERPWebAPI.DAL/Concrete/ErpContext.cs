@@ -160,7 +160,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<OHS_ProtocolMonitoringList> OhsProtocolMonitoringList { get; set; }
         public DbSet<OHS_PersonWorkMonitoringList> OhsPersonWorkMonitoringList { get; set; }
         public DbSet<OHS_MmpiList> OhsMmpiList { get; set; }
-        public DbSet<OHS_MmpiResult> OhsMmpiResults { get; set; }
+        public DbSet<OHS_MmpiAnswer> OhsMmpiResults { get; set; }
         public DbSet<OHS_MachineryMonitoringList> OhsMachineryMonitoringList { get; set; }
         public DbSet<OHS_LeaveList> OhsLeaveList { get; set; }
         public DbSet<OHS_HiringList> OhsHiringList { get; set; }

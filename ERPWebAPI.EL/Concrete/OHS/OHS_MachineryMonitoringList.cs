@@ -12,9 +12,9 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public int OhsCompanyId { get; set; }
         public string? OhsCompanyName { get; set; }
         public string FacilityName { get; set; }
-        public int MachineryTypeId { get; set; }
+        public short MachineryTypeId { get; set; }
         public string? MachineryType { get; set; }
-        public int MachineryBrandId { get; set; }
+        public short MachineryBrandId { get; set; }
         public string? MachineryBrand { get; set; }
         public byte RecordTypeId { get; set; }
         public string? RecordType { get; set; }

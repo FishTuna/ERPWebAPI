@@ -13,11 +13,11 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public string? DocumentComment { get; set; }
         public string SocialSecurityNumber { get; set; }
         public string? OhsDocumentType { get; set; }
-        public DateTime StartOfValidity { get; set; }
+        public DateTime? StartOfValidity { get; set; }
         public DateTime? EndOfValidity { get; set; }
         public string DocumentPath { get; set; }
         public bool IsActive { get; set; }
-        public string UserEmployee { get; set; }
-        public DateTime TransactionDate { get; set; }
+        public string? UserEmployee { get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }

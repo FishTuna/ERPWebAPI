@@ -19,7 +19,7 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public string SocialSecurityType { get; set; }
         public byte OhsDangerClassId { get; set; }
         public string? DangerClass { get; set; }
-        public int NACECodeId { get; set; }
+        public short NACECodeId { get; set; }
         public string? NACECode { get; set; }
         public int OhsJobId { get; set; }
         public string? OhsJob { get; set; }
@@ -27,13 +27,13 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public DateTime InformingDate { get; set; }
         public DateTime? ExpirationOfInforming { get; }
         public byte InformingControlState { get; set; }
-        public DateTime HealthReportDate { get; set; }
+        public DateTime? HealthReportDate { get; set; }
         public DateTime? ExpirationOfHealthReport { get; set; }
         public byte HealthReportControlState { get; set; }
-        public DateTime OhsCertificateDate { get; set; }
+        public DateTime? OhsCertificateDate { get; set; }
         public DateTime? ExpirationOfOhsCertificateDate { get; set; }
         public byte OhsCertificateControlState { get; set; }
-        public DateTime AssignmentLetterDate { get; set; }
+        public DateTime? AssignmentLetterDate { get; set; }
         public DateTime? ExpirationOfAssignmentLetter { get; set; }
         public byte AssignmentLetterControlState { get; set; }
         public byte? StatusId { get; set; }

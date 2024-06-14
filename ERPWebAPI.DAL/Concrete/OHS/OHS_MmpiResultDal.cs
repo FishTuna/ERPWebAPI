@@ -9,7 +9,7 @@ namespace ERPWebAPI.DAL.Concrete.OHS
 {
     public class OHS_MmpiResultDal : IOHS_MmpiResultDal
     {
-        public List<OHS_MmpiResult> GetAllDataDal(string module, string target, string point, string parameters)
+        public List<OHS_MmpiAnswer> GetAllDataDal(string module, string target, string point, string parameters)
         {
             using (ErpContext context = new ErpContext())
             {

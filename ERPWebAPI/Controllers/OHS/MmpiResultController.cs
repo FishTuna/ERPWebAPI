@@ -10,9 +10,9 @@ namespace ERPWebAPI.Controllers.OHS
     [ApiController]
     public class MmpiResultController : ControllerBase
     {
-        readonly IOHS_MmpiResultService<OHS_MmpiResult, SqlResult> _mmpiResultService;
+        readonly IOHS_MmpiResultService<OHS_MmpiAnswer, SqlResult> _mmpiResultService;
 
-        public MmpiResultController(IOHS_MmpiResultService<OHS_MmpiResult, SqlResult> mmpiResultService)
+        public MmpiResultController(IOHS_MmpiResultService<OHS_MmpiAnswer, SqlResult> mmpiResultService)
         {
 
             _mmpiResultService = mmpiResultService;

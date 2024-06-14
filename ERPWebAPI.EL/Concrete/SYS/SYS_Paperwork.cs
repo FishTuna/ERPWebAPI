@@ -13,10 +13,10 @@ namespace ERPWebAPI.EL.Concrete.SYS
         public byte PaperworkTypeId { get; set; }
         public string? PaperworkType { get; set; }
         public string? PaperworkTypeCode { get; set; }
-        public int PaperworkDepartmentId { get; set; }
+        public short PaperworkDepartmentId { get; set; }
         public string? PaperworkDepartment { get; set; }
         public string? PaperworkDepartmentCode { get; set; }
-        public int PaperworkNumber { get; set; } 
+        public short PaperworkNumber { get; set; } 
         public string? PaperworkPath { get; set; }
         public string? UserEmployee { get; set; }
         public DateTime? TransactionDate { get; set; }

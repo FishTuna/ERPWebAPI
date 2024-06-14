@@ -9,8 +9,9 @@ namespace ERPWebAPI.EL.Concrete.OHS
     {
         [Key]
         public int ProtocolId { get; set; }
+        public int OhsCompanyId { get; set; }
         public string OhsCompanyName { get; set; }
-        public string FacilityName { get; set; }
+        public string? FacilityName { get; set; }
         public string ApprovalTypeName { get; set; }
         public string ApprovedBy { get; set; }
         public int ApprovedByEmpId { get; set; }
@@ -18,7 +19,7 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public byte StatusId { get; set; }
         public string? Status { get; set; }
         public string? Comment { get; set; }
-        public byte ControlState { get; set; }
+        public byte? ControlState { get; set; }
         public DateTime TransactionDate { get; set; }
         public DateTime ProtocolDate { get; set; }
         public DateTime? ExpirationDate { get; set; }

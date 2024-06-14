@@ -9,7 +9,7 @@ using ERPWebAPI.EL.Concrete;
 
 namespace ERPWebAPI.BL.Concrete.OHS
 {
-    public class OHS_MmpiResultManager : IOHS_MmpiResultService<OHS_MmpiResult, SqlResult>
+    public class OHS_MmpiResultManager : IOHS_MmpiResultService<OHS_MmpiAnswer, SqlResult>
     {
         IOHS_MmpiResultDal _oHS_MmpiResultDal;
 
@@ -22,7 +22,7 @@ namespace ERPWebAPI.BL.Concrete.OHS
         //[CacheAspect]
         //[ValidationAspect(typeof(VacationTypeValidator))]
         //[PerformanceAspect(15)]
-        public IDataResult<List<OHS_MmpiResult>> GetAllDataMngr(string module, string target, string point, string parameters)
+        public IDataResult<List<OHS_MmpiAnswer>> GetAllDataMngr(string module, string target, string point, string parameters)
         {
             ///kurallar private mwthod olarak eklenecek aşağpıya
             //IDataResult<SqlResult> result = BusinessRules.Run();
@@ -30,7 +30,7 @@ namespace ERPWebAPI.BL.Concrete.OHS
             //{
             //    return result;
             //}
-            return new SuccessDataResult<List<OHS_MmpiResult>>(_oHS_MmpiResultDal.GetAllDataDal(module, target, point, parameters), Messages.Listed);
+            return new SuccessDataResult<List<OHS_MmpiAnswer>>(_oHS_MmpiResultDal.GetAllDataDal(module, target, point, parameters), Messages.Listed);
         }
 
         public IDataResult<SqlResult> ResultOperationsMngr(string module, string target, string point, string parameters)

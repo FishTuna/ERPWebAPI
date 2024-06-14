@@ -9,14 +9,14 @@ namespace ERPWebAPI.EL.Concrete.OHS
         [Key]
         public int OhsTrainingId { get; set; }
         public string OhsTrainingName { get; set; }
-        public string TrainingType { get; set; }
-        public string InstructorType { get; set; }
-        public string InstructorSocialSecurityNumber { get; set; }
-        public string InstructorName { get; set; }
-        public string InstructorTitle { get; set; }
-        public string TrainingComment { get; set; }
-        public string TrainingLocation { get; set; }
-        public string TrainingOrganizer { get; set; }
+        public bool IsInstuctorOutsourced { get; set; }
+        public string? InstructorSocialSecurityNumber { get; set; }
+        public string? InstructorName { get; set; }
+        public string? InstructorTitle { get; set; }
+        public string? TrainingComment { get; set; }
+        public string? TrainingLocation { get; set; }
+        public int TrainingOrganizerId { get; set; }
+        public string? TrainingOrganizer { get; set; }
         public bool IsCertificated { get; set; }
         public int? TemplateCertificateId { get; set; }
         public string? TemplateCertificateName { get; set; }

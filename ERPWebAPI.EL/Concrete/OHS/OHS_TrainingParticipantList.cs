@@ -16,6 +16,7 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public string? EmployeeDepartment { get; set; }
         public string? EmployeePosition { get; set; }
         public string? EmployeeJob { get; set; }
+        public int InvolvedById { get; set; }
         public string? InvolvedBy { get; set; }
         public string? PhotoPath { get; set; }
         public string? UserEmployee { get; set; }

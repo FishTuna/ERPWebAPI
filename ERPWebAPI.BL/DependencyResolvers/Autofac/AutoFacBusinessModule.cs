@@ -302,7 +302,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_MmpiListDal>().As<IOHS_MmpiListDal>().SingleInstance();
             builder.RegisterType<OHS_MmpiListManager>().As<IOHS_MmpiListService<OHS_MmpiList, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_MmpiResultDal>().As<IOHS_MmpiResultDal>().SingleInstance();
-            builder.RegisterType<OHS_MmpiResultManager>().As<IOHS_MmpiResultService<OHS_MmpiResult, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MmpiResultManager>().As<IOHS_MmpiResultService<OHS_MmpiAnswer, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_ProtocolMonitoringListDal>().As<IOHS_ProtocolMonitoringListDal>().SingleInstance();
             builder.RegisterType<OHS_ProtocolMonitoringListManager>().As<IOHS_ProtocolMonitoringListService<OHS_ProtocolMonitoringList, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_PersonWorkMonitoringListDal>().As<IOHS_PersonWorkMonitoringListDal>().SingleInstance();

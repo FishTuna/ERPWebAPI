@@ -5,7 +5,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.OHS
 {
-    public class OHS_MmpiResult:IEntity
+    public class OHS_MmpiAnswer:IEntity
     {
         [Key]
         public int MmpiId { get; set; }

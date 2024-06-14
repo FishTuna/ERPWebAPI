@@ -6,7 +6,7 @@ using ERPWebAPI.EL.Concrete;
 
 namespace ERPWebAPI.DAL.Abstract.OHS
 {
-    public interface IOHS_MmpiResultDal : ICommonDalOperations<OHS_MmpiResult, SqlResult>
+    public interface IOHS_MmpiResultDal : ICommonDalOperations<OHS_MmpiAnswer, SqlResult>
     {
     }
 }
