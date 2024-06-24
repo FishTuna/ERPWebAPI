@@ -19,8 +19,10 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public string SocialSecurityType { get; set; }
         public byte OhsDangerClassId { get; set; }
         public string? DangerClass { get; set; }
+        public string? DangerRgb { get; set; }
         public short NACECodeId { get; set; }
         public string? NACECode { get; set; }
+        public string? NACEDescription { get; set; }
         public int OhsJobId { get; set; }
         public string? OhsJob { get; set; }
         public string? Comment { get; set; }

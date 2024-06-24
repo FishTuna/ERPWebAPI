@@ -5,17 +5,13 @@ using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.OHS
 {
-    public class OHS_TorkFormScoreResult : IEntity
+    public class OHS_SocialSecurityType :IEntity
     {
         [Key]
         public byte Id { get; set; }
-        public string Evaluation { get; set; }
-        public string StatusInfo { get; set; }
-        public int BaseScore { get; set; }
-        public int CeilingScore { get; set; }
-        public string RGB { get; set; }
+        public string Name { get; set; }
+        public bool IsActive { get; set; }
         public string? UserEmployee { get; set; }
         public DateTime? TransactionDate { get; set; }
-
     }
 }

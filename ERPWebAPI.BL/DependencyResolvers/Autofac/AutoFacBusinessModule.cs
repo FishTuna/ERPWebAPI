@@ -241,6 +241,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_PaperworkDepartmentManager>().As<ISYS_PaperworkDepartmentService<SYS_PaperworkDepartment, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_PaperworkTypeDal>().As<ISYS_PaperworkTypeDal>().SingleInstance();
             builder.RegisterType<SYS_PaperworkTypeManager>().As<ISYS_PaperworkTypeService<SYS_PaperworkType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
 
 
 
@@ -309,8 +313,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_PersonWorkMonitoringListManager>().As<IOHS_PersonWorkMonitoringListService<OHS_PersonWorkMonitoringList, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TestQuestionDal>().As<IOHS_TestQuestionDal>().SingleInstance();
             builder.RegisterType<OHS_TestQuestionManager>().As<IOHS_TestQuestionService<OHS_TestQuestion, SqlResult>>().SingleInstance();
-            builder.RegisterType<OHS_TestQuestionTypeDal>().As<IOHS_TestQuestionTypeDal>().SingleInstance();
-            builder.RegisterType<OHS_TestQuestionTypeManager>().As<IOHS_TestQuestionTypeService<OHS_TestQuestionType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestQuestionGroupDal>().As<IOHS_TestQuestionGroupDal>().SingleInstance();
+            builder.RegisterType<OHS_TestQuestionGroupManager>().As<IOHS_TestQuestionGroupService<OHS_TestQuestionGroup, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TorkFormDal>().As<IOHS_TorkFormDal>().SingleInstance();
             builder.RegisterType<OHS_TorkFormManager>().As<IOHS_TorkFormService<OHS_TorkForm, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TorkFormScoreResultDal>().As<IOHS_TorkFormScoreResultDal>().SingleInstance();
@@ -319,6 +323,32 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_TrainingListManager>().As<IOHS_TrainingListService<OHS_TrainingList, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TrainingParticipantListDal>().As<IOHS_TrainingParticipantListDal>().SingleInstance();
             builder.RegisterType<OHS_TrainingParticipantListManager>().As<IOHS_TrainingParticipantListService<OHS_TrainingParticipantList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_CompanyDal>().As<IOHS_CompanyDal>().SingleInstance();
+            builder.RegisterType<OHS_CompanyManager>().As<IOHS_CompanyService<OHS_Company, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_JobDal>().As<IOHS_JobDal>().SingleInstance();
+            builder.RegisterType<OHS_JobManager>().As<IOHS_JobService<OHS_Job, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryBrandDal>().As<IOHS_MachineryBrandDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryBrandManager>().As<IOHS_MachineryBrandService<OHS_MachineryBrand, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryTypeDal>().As<IOHS_MachineryTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryTypeManager>().As<IOHS_MachineryTypeService<OHS_MachineryType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryRecordTypeDal>().As<IOHS_MachineryRecordTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryRecordTypeManager>().As<IOHS_MachineryRecordTypeService<OHS_MachineryRecordType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MmpiAnswerDal>().As<IOHS_MmpiAnswerDal>().SingleInstance();
+            builder.RegisterType<OHS_MmpiAnswerManager>().As<IOHS_MmpiAnswerService<OHS_MmpiAnswer, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_SocialSecurityTypeDal>().As<IOHS_SocialSecurityTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_SocialSecurityTypeManager>().As<IOHS_SocialSecurityTypeService<OHS_SocialSecurityType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestDal>().As<IOHS_TestDal>().SingleInstance();
+            builder.RegisterType<OHS_TestManager>().As<IOHS_TestService<OHS_Test, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestReasonDal>().As<IOHS_TestReasonDal>().SingleInstance();
+            builder.RegisterType<OHS_TestReasonManager>().As<IOHS_TestReasonService<OHS_TestReason, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkIncidenceRealizationDal>().As<IOHS_TorkIncidenceRealizationDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkIncidenceRealizationManager>().As<IOHS_TorkIncidenceRealizationService<OHS_TorkIncidenceRealization, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceConsequenceDal>().As<IOHS_TorkOccurrenceConsequenceDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceConsequenceManager>().As<IOHS_TorkOccurrenceConsequenceService<OHS_TorkOccurrenceConsequence, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceProbabilityDal>().As<IOHS_TorkOccurrenceProbabilityDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceProbabilityManager>().As<IOHS_TorkOccurrenceProbabilityService<OHS_TorkOccurrenceProbability, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkTypeDal>().As<IOHS_TorkTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkTypeManager>().As<IOHS_TorkTypeService<OHS_TorkType, SqlResult>>().SingleInstance();
 
             #endregion OHS
 

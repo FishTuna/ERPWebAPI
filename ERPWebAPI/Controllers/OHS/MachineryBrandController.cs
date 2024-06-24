@@ -2,20 +2,21 @@
 using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERPWebAPI.Controllers.OHS
 {
     [Route("api/OHS/[controller]")]
     [ApiController]
-    public class TestQuestionTypeController : ControllerBase
+    public class MachineryBrandController : ControllerBase
     {
-        readonly IOHS_TestQuestionTypeService<OHS_TestQuestionType, SqlResult> _testQuestionTypeService;
+        readonly IOHS_MachineryBrandService<OHS_MachineryBrand, SqlResult> _machineryBrandService;
 
-        public TestQuestionTypeController(IOHS_TestQuestionTypeService<OHS_TestQuestionType, SqlResult> testQuestionTypeService)
+        public MachineryBrandController(IOHS_MachineryBrandService<OHS_MachineryBrand, SqlResult> machineryBrandService)
         {
 
-            _testQuestionTypeService = testQuestionTypeService;
+            _machineryBrandService = machineryBrandService;
 
         }
         [HttpGet("{module}/{target}/{point}/{parameters}")]
@@ -23,7 +24,7 @@ namespace ERPWebAPI.Controllers.OHS
         [Authorize(Roles = "OHS,Admin")]
         public IActionResult GetAll([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _testQuestionTypeService.GetAllDataMngr(module, target, point, parameters);
+            var result = _machineryBrandService.GetAllDataMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -36,7 +37,7 @@ namespace ERPWebAPI.Controllers.OHS
         [Authorize(Roles = "OHS,Admin")]
         public IActionResult Delete([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _testQuestionTypeService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _machineryBrandService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -49,7 +50,7 @@ namespace ERPWebAPI.Controllers.OHS
         [Authorize(Roles = "OHS,Admin")]
         public IActionResult Insert([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _testQuestionTypeService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _machineryBrandService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -62,7 +63,7 @@ namespace ERPWebAPI.Controllers.OHS
         [Authorize(Roles = "OHS,Admin")]
         public IActionResult Update([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _testQuestionTypeService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _machineryBrandService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -71,4 +72,3 @@ namespace ERPWebAPI.Controllers.OHS
         }
     }
 }
-

@@ -9,20 +9,20 @@ using ERPWebAPI.EL.Concrete;
 
 namespace ERPWebAPI.BL.Concrete.OHS
 {
-    public class OHS_TestQuestionTypeManager : IOHS_TestQuestionTypeService<OHS_TestQuestionType, SqlResult>
+    public class OHS_TorkOccurrenceProbabilityManager : IOHS_TorkOccurrenceProbabilityService<OHS_TorkOccurrenceProbability, SqlResult>
     {
-        IOHS_TestQuestionTypeDal _oHS_TestQuestionTypeDal;
+        IOHS_TorkOccurrenceProbabilityDal _oHS_TorkOccurrenceProbabilityDal;
 
-        public OHS_TestQuestionTypeManager(IOHS_TestQuestionTypeDal oHS_TestQuestionTypeDal)
+        public OHS_TorkOccurrenceProbabilityManager(IOHS_TorkOccurrenceProbabilityDal oHS_TorkOccurrenceProbabilityDal)
         {
-            _oHS_TestQuestionTypeDal = oHS_TestQuestionTypeDal;
+            _oHS_TorkOccurrenceProbabilityDal = oHS_TorkOccurrenceProbabilityDal;
         }
 
 
         //[CacheAspect]
         //[ValidationAspect(typeof(VacationTypeValidator))]
         //[PerformanceAspect(15)]
-        public IDataResult<List<OHS_TestQuestionType>> GetAllDataMngr(string module, string target, string point, string parameters)
+        public IDataResult<List<OHS_TorkOccurrenceProbability>> GetAllDataMngr(string module, string target, string point, string parameters)
         {
             ///kurallar private mwthod olarak eklenecek aşağpıya
             //IDataResult<SqlResult> result = BusinessRules.Run();
@@ -30,12 +30,12 @@ namespace ERPWebAPI.BL.Concrete.OHS
             //{
             //    return result;
             //}
-            return new SuccessDataResult<List<OHS_TestQuestionType>>(_oHS_TestQuestionTypeDal.GetAllDataDal(module, target, point, parameters), Messages.Listed);
+            return new SuccessDataResult<List<OHS_TorkOccurrenceProbability>>(_oHS_TorkOccurrenceProbabilityDal.GetAllDataDal(module, target, point, parameters), Messages.Listed);
         }
 
         public IDataResult<SqlResult> ResultOperationsMngr(string module, string target, string point, string parameters)
         {
-            var result = _oHS_TestQuestionTypeDal.ResultOperationsDal(module, target, point, parameters);
+            var result = _oHS_TorkOccurrenceProbabilityDal.ResultOperationsDal(module, target, point, parameters);
             if (!result.sqlReturn)
             {
                 return new ErrorDataResult<SqlResult>(result);
