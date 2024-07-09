@@ -22,7 +22,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         public short MINHOURRESTRICTION { get; set; }
         public short MAXHOURRESTRICTION { get; set; }
         public short VESTINGPERIOD { get; set; }
-        public byte VACATIONGROUP { get; set; }
         public byte MISSINGDAYID { get; set; }
     }
 }

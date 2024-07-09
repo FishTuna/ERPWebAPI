@@ -8,6 +8,7 @@ using ERPWebAPI.BL.Abstract.DASHBOARD;
 using ERPWebAPI.BL.Abstract.GRAPH;
 using ERPWebAPI.BL.Abstract.HR;
 using ERPWebAPI.BL.Abstract.LGN;
+using ERPWebAPI.BL.Abstract.OHS;
 using ERPWebAPI.BL.Abstract.PRF;
 using ERPWebAPI.BL.Abstract.RPT;
 using ERPWebAPI.BL.Abstract.Session;
@@ -165,6 +166,12 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<HR_cmb_AnnualLeaveDecreaseTypeManager>().As<IHR_cmb_AnnualLeaveDecreaseTypeService<HR_cmb_AnnualLeaveDecreaseType, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_tbl_AnnualLeaveDecreaseDal>().As<IHR_tbl_AnnualLeaveDecreaseDal>().SingleInstance();
             builder.RegisterType<HR_tbl_AnnualLeaveDecreaseManager>().As<IHR_tbl_AnnualLeaveDecreaseService<HR_tbl_AnnualLeaveDecrease, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_ResumeDal>().As<IHR_ResumeDal>().SingleInstance();
+            builder.RegisterType<HR_ResumeManager>().As<IHR_ResumeService<HR_Resume, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_ResumeEducationInfoDal>().As<IHR_ResumeEducationInfoDal>().SingleInstance();
+            builder.RegisterType<HR_ResumeEducationInfoManager>().As<IHR_ResumeEducationInfoService<HR_ResumeEducationInfo, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_ResumeHiringProcessDal>().As<IHR_ResumeHiringProcessDal>().SingleInstance();
+            builder.RegisterType<HR_ResumeHiringProcessManager>().As<IHR_ResumeHiringProcessService<HR_ResumeHiringProcess, SqlResult>>().SingleInstance();
 
             #endregion
 
@@ -228,6 +235,16 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_tbl_SmlOperationManager>().As<ISYS_tbl_SmlOperationService<SYS_tbl_SmlOperation, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_cmb_SmsTemplateDal>().As<ISYS_cmb_SmsTemplateDal>().SingleInstance();
             builder.RegisterType<SYS_cmb_SmsTemplateManager>().As<ISYS_cmb_SmsTemplateService<SYS_cmb_SmsTemplate, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_PaperworkDal>().As<ISYS_PaperworkDal>().SingleInstance();
+            builder.RegisterType<SYS_PaperworkManager>().As<ISYS_PaperworkService<SYS_Paperwork, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_PaperworkDepartmentDal>().As<ISYS_PaperworkDepartmentDal>().SingleInstance();
+            builder.RegisterType<SYS_PaperworkDepartmentManager>().As<ISYS_PaperworkDepartmentService<SYS_PaperworkDepartment, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_PaperworkTypeDal>().As<ISYS_PaperworkTypeDal>().SingleInstance();
+            builder.RegisterType<SYS_PaperworkTypeManager>().As<ISYS_PaperworkTypeService<SYS_PaperworkType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
 
 
 
@@ -276,6 +293,62 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_tbl_EmergencyEmpJobManager>().As<IOHS_tbl_EmergencyEmpJobService<OHS_tbl_EmergencyEmpJob, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_tbl_EmployeeListDal>().As<IOHS_tbl_EmployeeListDal>().SingleInstance();
             builder.RegisterType<OHS_tbl_EmployeeListManager>().As<IOHS_tbl_EmployeeListService<OHS_tbl_EmployeeList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_DocumentDal>().As<IOHS_DocumentDal>().SingleInstance();
+            builder.RegisterType<OHS_DocumentManager>().As<IOHS_DocumentService<OHS_Document, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_EmployeeOrientationListDal>().As<IOHS_EmployeeOrientationListDal>().SingleInstance();
+            builder.RegisterType<OHS_EmployeeOrientationListManager>().As<IOHS_EmployeeOrientationListService<OHS_EmployeeOrientationList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_HiringListDal>().As<IOHS_HiringListDal>().SingleInstance();
+            builder.RegisterType<OHS_HiringListManager>().As<IOHS_HiringListService<OHS_HiringList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_LeaveListDal>().As<IOHS_LeaveListDal>().SingleInstance();
+            builder.RegisterType<OHS_LeaveListManager>().As<IOHS_LeaveListService<OHS_LeaveList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryMonitoringListDal>().As<IOHS_MachineryMonitoringListDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryMonitoringListManager>().As<IOHS_MachineryMonitoringListService<OHS_MachineryMonitoringList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MmpiListDal>().As<IOHS_MmpiListDal>().SingleInstance();
+            builder.RegisterType<OHS_MmpiListManager>().As<IOHS_MmpiListService<OHS_MmpiList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MmpiResultDal>().As<IOHS_MmpiResultDal>().SingleInstance();
+            builder.RegisterType<OHS_MmpiResultManager>().As<IOHS_MmpiResultService<OHS_MmpiAnswer, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_ProtocolMonitoringListDal>().As<IOHS_ProtocolMonitoringListDal>().SingleInstance();
+            builder.RegisterType<OHS_ProtocolMonitoringListManager>().As<IOHS_ProtocolMonitoringListService<OHS_ProtocolMonitoringList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_PersonWorkMonitoringListDal>().As<IOHS_PersonWorkMonitoringListDal>().SingleInstance();
+            builder.RegisterType<OHS_PersonWorkMonitoringListManager>().As<IOHS_PersonWorkMonitoringListService<OHS_PersonWorkMonitoringList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestQuestionDal>().As<IOHS_TestQuestionDal>().SingleInstance();
+            builder.RegisterType<OHS_TestQuestionManager>().As<IOHS_TestQuestionService<OHS_TestQuestion, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestQuestionGroupDal>().As<IOHS_TestQuestionGroupDal>().SingleInstance();
+            builder.RegisterType<OHS_TestQuestionGroupManager>().As<IOHS_TestQuestionGroupService<OHS_TestQuestionGroup, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkFormDal>().As<IOHS_TorkFormDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkFormManager>().As<IOHS_TorkFormService<OHS_TorkForm, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkFormScoreResultDal>().As<IOHS_TorkFormScoreResultDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkFormScoreResultManager>().As<IOHS_TorkFormScoreResultService<OHS_TorkFormScoreResult, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingListDal>().As<IOHS_TrainingListDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingListManager>().As<IOHS_TrainingListService<OHS_TrainingList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingParticipantListDal>().As<IOHS_TrainingParticipantListDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingParticipantListManager>().As<IOHS_TrainingParticipantListService<OHS_TrainingParticipantList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_CompanyDal>().As<IOHS_CompanyDal>().SingleInstance();
+            builder.RegisterType<OHS_CompanyManager>().As<IOHS_CompanyService<OHS_Company, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_JobDal>().As<IOHS_JobDal>().SingleInstance();
+            builder.RegisterType<OHS_JobManager>().As<IOHS_JobService<OHS_Job, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryBrandDal>().As<IOHS_MachineryBrandDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryBrandManager>().As<IOHS_MachineryBrandService<OHS_MachineryBrand, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryTypeDal>().As<IOHS_MachineryTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryTypeManager>().As<IOHS_MachineryTypeService<OHS_MachineryType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MachineryRecordTypeDal>().As<IOHS_MachineryRecordTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_MachineryRecordTypeManager>().As<IOHS_MachineryRecordTypeService<OHS_MachineryRecordType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_MmpiAnswerDal>().As<IOHS_MmpiAnswerDal>().SingleInstance();
+            builder.RegisterType<OHS_MmpiAnswerManager>().As<IOHS_MmpiAnswerService<OHS_MmpiAnswer, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_SocialSecurityTypeDal>().As<IOHS_SocialSecurityTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_SocialSecurityTypeManager>().As<IOHS_SocialSecurityTypeService<OHS_SocialSecurityType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestDal>().As<IOHS_TestDal>().SingleInstance();
+            builder.RegisterType<OHS_TestManager>().As<IOHS_TestService<OHS_Test, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TestReasonDal>().As<IOHS_TestReasonDal>().SingleInstance();
+            builder.RegisterType<OHS_TestReasonManager>().As<IOHS_TestReasonService<OHS_TestReason, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkIncidenceRealizationDal>().As<IOHS_TorkIncidenceRealizationDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkIncidenceRealizationManager>().As<IOHS_TorkIncidenceRealizationService<OHS_TorkIncidenceRealization, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceConsequenceDal>().As<IOHS_TorkOccurrenceConsequenceDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceConsequenceManager>().As<IOHS_TorkOccurrenceConsequenceService<OHS_TorkOccurrenceConsequence, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceProbabilityDal>().As<IOHS_TorkOccurrenceProbabilityDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkOccurrenceProbabilityManager>().As<IOHS_TorkOccurrenceProbabilityService<OHS_TorkOccurrenceProbability, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TorkTypeDal>().As<IOHS_TorkTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_TorkTypeManager>().As<IOHS_TorkTypeService<OHS_TorkType, SqlResult>>().SingleInstance();
 
             #endregion OHS
 
@@ -318,8 +391,6 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<PRF_tbl_AnswerManager>().As<IPRF_tbl_AnswerService<PRF_tbl_Answer, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_EvaluationDal>().As<IPRF_tbl_EvaluationDal>().SingleInstance();
             builder.RegisterType<PRF_tbl_EvaluationManager>().As<IPRF_tbl_EvaluationService<PRF_tbl_Evaluation, SqlResult>>().SingleInstance();
-            builder.RegisterType<PRF_tbl_EmployeeListDal>().As<IPRF_tbl_EmployeeListDal>().SingleInstance();
-            builder.RegisterType<PRF_tbl_EmployeeListManager>().As<IPRF_tbl_EmployeeListService<PRF_tbl_EmployeeList, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_PeriodMatchDal>().As<IPRF_tbl_PeriodMatchDal>().SingleInstance();
             builder.RegisterType<PRF_tbl_PeriodMatchManager>().As<IPRF_tbl_PeriodMatchService<PRF_tbl_PeriodMatch, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_QuestionDal>().As<IPRF_tbl_QuestionDal>().SingleInstance();

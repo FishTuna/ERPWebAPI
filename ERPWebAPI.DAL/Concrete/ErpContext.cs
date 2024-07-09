@@ -82,9 +82,11 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<HR_cmb_LeaveEarningType> HrLeaveEarningTypes { get; set; }
         public DbSet<HR_cmb_AnnualLeaveDecreaseType> HrAnnualLeaveDecreaseTypes { get; set; }
         public DbSet<HR_tbl_AnnualLeaveDecrease> HrAnnualLeaveDecreases { get; set; }
-
-
+        public DbSet<HR_Resume> HrResumes { get; set; }
+        public DbSet<HR_ResumeEducationInfo> HrResumeEducationInfos { get; set; }
+        public DbSet<HR_ResumeHiringProcess> HrResumeHiringProcesses { get; set; }
         public DbSet<HR_tbl_Leave> HrLeaveForms { get; set; }
+
         #endregion
 
         #region SYS
@@ -116,6 +118,11 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<SYS_tbl_SendedSmsList> SysSendedSmsList { get; set; }
         public DbSet<SYS_tbl_EmployeeForSms> SysEmployeeForSmsList { get; set; }
         public DbSet<SYS_cmb_SmsTemplate> SysSmsTemplates { get; set; }
+        public DbSet<SYS_Paperwork> SysPaperworks { get; set; }
+        public DbSet<SYS_PaperworkDepartment> SysPaperworkDepartments { get; set; }
+        public DbSet<SYS_PaperworkType> SysPaperworkTypes { get; set; }
+        public DbSet<SYS_StandardAnswerType> SysStandardAnswerTypes { get; set; }
+        public DbSet<SYS_StandardAnswer> SysStandardAnswers { get; set; }
 
         #endregion
 
@@ -141,11 +148,40 @@ namespace ERPWebAPI.DAL.Concrete
         #endregion TA
 
         #region OHS
-
+          
         public DbSet<OHS_cmb_EmergencyJob> OhsEmergencyJobs { get; set; }
         public DbSet<OHS_cmb_EmergencyRegion> OhsEmergencyRegions { get; set; }
         public DbSet<OHS_tbl_EmergencyEmpJob> OhsEmergencyEmpJobs { get; set; }
         public DbSet<OHS_tbl_EmployeeList> OhsEmployeesList { get; set; }
+        public DbSet<OHS_TrainingParticipantList> OhsTrainingParticipantList { get; set; }
+        public DbSet<OHS_TrainingList> OhsTrainingList { get; set; }
+        public DbSet<OHS_TorkFormScoreResult> OhsTorkFormScoreResults { get; set; }
+        public DbSet<OHS_TorkForm> OhsTorkForms { get; set; }
+        public DbSet<OHS_TestQuestionGroup> OhsTestQuestionGroups { get; set; }
+        public DbSet<OHS_TestQuestion> OhsTestQuestions { get; set; }
+        public DbSet<OHS_ProtocolMonitoringList> OhsProtocolMonitoringList { get; set; }
+        public DbSet<OHS_PersonWorkMonitoringList> OhsPersonWorkMonitoringList { get; set; }
+        public DbSet<OHS_MmpiList> OhsMmpiList { get; set; }
+        public DbSet<OHS_MmpiAnswer> OhsMmpiResults { get; set; }
+        public DbSet<OHS_MachineryMonitoringList> OhsMachineryMonitoringList { get; set; }
+        public DbSet<OHS_LeaveList> OhsLeaveList { get; set; }
+        public DbSet<OHS_HiringList> OhsHiringList { get; set; }
+        public DbSet<OHS_InstructorList> OhsInstructorList { get; set; }
+        public DbSet<OHS_EmployeeOrientationList> OhsEmployeeOrientationList { get; set; }
+        public DbSet<OHS_Document> OhsDocuments { get; set; }
+        public DbSet<OHS_Company> OhsCompanies { get; set; }
+        public DbSet<OHS_Job> OhsJobs { get; set; }
+        public DbSet<OHS_MachineryBrand> OhsMachineryBrands { get; set; }
+        public DbSet<OHS_MachineryRecordType> OhsMachineryRecordTypes { get; set; }
+        public DbSet<OHS_MachineryType> OhsMachineryTypes { get; set; }
+        public DbSet<OHS_MmpiAnswer> OhsMmpiAnswers { get; set; }
+        public DbSet<OHS_SocialSecurityType> OhsSocialSecurityTypes { get; set; }
+        public DbSet<OHS_Test> OhsTests { get; set; }
+        public DbSet<OHS_TestReason> OhsTestReasons { get; set; }
+        public DbSet<OHS_TorkIncidenceRealization> OhsTorkIncidenceRealizations { get; set; }
+        public DbSet<OHS_TorkOccurrenceConsequence> OhsTorkOccurrenceConsequences { get; set; }
+        public DbSet<OHS_TorkOccurrenceProbability> OhsTorkOccurrenceProbabilities { get; set; }
+        public DbSet<OHS_TorkType> OhsTorkTypes { get; set; }
 
         #endregion OHS
 
