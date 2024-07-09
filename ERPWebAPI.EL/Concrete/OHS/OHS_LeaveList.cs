@@ -1,11 +1,13 @@
 ﻿
 
 using Core.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.OHS
 {
     public class OHS_LeaveList : IEntity
     {
+        [Key]
         public int Id { get; set; }
         public string NameLastName { get; set; }
         public short LocationId { get; set; }

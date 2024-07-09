@@ -10,8 +10,8 @@ namespace ERPWebAPI.EL.Concrete.OHS
         [Key]
         public int Id { get; set; }
         public string SocialSecurityNo { get; set; }
-        public short FaciiltyId { get; set; }
-        public string? Faclity { get; set; }
+        public short FacilityId { get; set; }
+        public string? Facility { get; set; }
         public short DepartmentId { get; set; }
         public string? Department { get; set; }
         public string NameLastName { get; set; }

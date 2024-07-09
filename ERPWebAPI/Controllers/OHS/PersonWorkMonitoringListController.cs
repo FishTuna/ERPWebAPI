@@ -10,9 +10,9 @@ namespace ERPWebAPI.Controllers.OHS
     [ApiController]
     public class PersonWorkMonitoringListController : ControllerBase
     {
-        readonly IOHS_DocumentService<OHS_Document, SqlResult> _personWorkMonitoringListService;
+        readonly IOHS_PersonWorkMonitoringListService<OHS_PersonWorkMonitoringList, SqlResult> _personWorkMonitoringListService;
 
-        public PersonWorkMonitoringListController(IOHS_DocumentService<OHS_Document, SqlResult> personWorkMonitoringListService)
+        public PersonWorkMonitoringListController(IOHS_PersonWorkMonitoringListService<OHS_PersonWorkMonitoringList, SqlResult> personWorkMonitoringListService)
         {
 
             _personWorkMonitoringListService = personWorkMonitoringListService;

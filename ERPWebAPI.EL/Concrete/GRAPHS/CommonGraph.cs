@@ -9,6 +9,6 @@ namespace ERPWebAPI.EL.Concrete.GRAPHS
         public int Id { get; set; }
         public string SERIES { get; set; }
         public string ARGUMENT { get; set; }
-        public int VALUE { get; set; }
+        public decimal VALUE { get; set; }
     }
 }
