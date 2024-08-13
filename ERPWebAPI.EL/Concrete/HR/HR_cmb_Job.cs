@@ -9,5 +9,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         [Key]
         public short JOB_ID { get; set; }
         public string JOB_NAME { get; set; }
+        public bool IS_ACTIVE { get; set; }
     }
 }

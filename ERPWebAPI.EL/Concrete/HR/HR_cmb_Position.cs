@@ -8,5 +8,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         [Key]
         public short POSITION_ID { get; set; }
         public string POSITION_NAME { get; set; }
+        public bool IS_ACTIVE { get; set; }
     }
 }
