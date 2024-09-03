@@ -64,7 +64,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
     public class AutoFacBusinessModule : Module
     {
         protected override void Load(ContainerBuilder builder)
-        {
+        { 
             #region GRAPH
             builder.RegisterType<CommonGraphManager>().As<ICommonGraphService<CommonGraph, SqlResult>>();
             builder.RegisterType<CommonGraphDal>().As<ICommonGraphDal>();
@@ -168,6 +168,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<HR_tbl_AnnualLeaveDecreaseManager>().As<IHR_tbl_AnnualLeaveDecreaseService<HR_tbl_AnnualLeaveDecrease, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_ResumeDal>().As<IHR_ResumeDal>().SingleInstance();
             builder.RegisterType<HR_ResumeManager>().As<IHR_ResumeService<HR_Resume, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_ResumeHiringStepDal>().As<IHR_ResumeHiringStepDal>().SingleInstance();
+            builder.RegisterType<HR_ResumeHiringStepManager>().As<IHR_ResumeHiringStepService<HR_Resume, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_ResumeEducationInfoDal>().As<IHR_ResumeEducationInfoDal>().SingleInstance();
             builder.RegisterType<HR_ResumeEducationInfoManager>().As<IHR_ResumeEducationInfoService<HR_ResumeEducationInfo, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_ResumeHiringProcessDal>().As<IHR_ResumeHiringProcessDal>().SingleInstance();
