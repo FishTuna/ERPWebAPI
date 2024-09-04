@@ -14,7 +14,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         public string? SecondLastName { get; set; }
         public DateTime DateOfBirth { get; set; }
         public byte Age { get; set; }
-        public byte GraduationTypeId { get; set; }
         public string? GraduationType { get; set; }
         public string Profession { get; set; }
         public string? Reference { get; set; }
