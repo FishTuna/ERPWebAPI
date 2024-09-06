@@ -88,6 +88,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<HR_tbl_Leave> HrLeaveForms { get; set; }
         public DbSet<HR_ResumeHiringStep>HR_ResumeHiringSteps { get; set; }
         public DbSet<HR_ResumeInterview> HR_ResumeInterviews { get; set; }
+        public DbSet<HR_ResumeHiringProcessResult> HrResumeHiringProcessResults { get; set; }
 
 
         #endregion
