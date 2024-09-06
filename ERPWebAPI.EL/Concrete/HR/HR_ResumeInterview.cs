@@ -16,6 +16,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         public DateTime InterviewDate { get; set; }
         public string? GraduationType { get; set; }
         public string? Profession { get; set; }
+        public string? Comment { get; set; }
         public bool IsActive { get; set; }
         public string? UserEmployee { get; set; }
         public DateTime? TransactionDate { get; set; }
