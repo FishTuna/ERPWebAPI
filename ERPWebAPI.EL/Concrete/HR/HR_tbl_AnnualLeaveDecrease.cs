@@ -13,7 +13,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         public byte DECREASE_TYPE_ID { get; set; }
         public string DECREASE_TYPE_NAME { get; set; }
         public float AMOUNT { get; set; }
-        public string COMMENT { get; set; }
+        public string? COMMENT { get; set; }
         public DateTime VALIDITY_PERIOD { get; set; }
         public int USER_EMPLOYEE_ID { get; set; }
         public string LOGIN_NAME { get; set; }

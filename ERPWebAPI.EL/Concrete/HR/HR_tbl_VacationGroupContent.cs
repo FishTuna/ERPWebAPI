@@ -12,5 +12,5 @@ namespace ERPWebAPI.EL.Concrete.HR
         public int USER_EMPLOYEE_ID { get; set; }
         public string LOGIN_NAME { get; set; }
         public DateTime TRANSACTION_DATE { get; set; }
-    }
+}
 }
