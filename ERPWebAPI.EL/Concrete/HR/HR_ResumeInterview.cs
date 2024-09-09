@@ -10,7 +10,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         [Key]
         public int ResumeInterviewId { get; set; }
         public int ResumeId { get; set; }
-        public int HiringProcessId { get; set; }
         public string? NameLastname { get; set; }
         public string? ContactInfo { get; set; }
         public DateTime InterviewDate { get; set; }
