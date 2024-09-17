@@ -251,6 +251,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
             builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_PropGraphListDal>().As<ISYS_PropGraphListDal>().SingleInstance();
+            builder.RegisterType<SYS_PropGraphListManager>().As<ISYS_PropGraphListService<SYS_PropGraphList, SqlResult>>().SingleInstance();
 
 
 

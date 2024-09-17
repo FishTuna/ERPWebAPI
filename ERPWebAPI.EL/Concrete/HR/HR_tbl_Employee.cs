@@ -31,6 +31,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         public byte LEAVE_EARNING_TYPE_ID { get; set; }
         public bool IS_TEMPORARY { get; set; }
         public bool IS_RETIRED { get; set; }
+        public bool IS_CONVICTED { get; set; }
         public bool IS_ACTIVE { get; set; }
         public DateTime TRANSACTION_DATE { get; set; }
         public int USER_EMPLOYEE_ID { get; set; }
