@@ -127,6 +127,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<SYS_PaperworkType> SysPaperworkTypes { get; set; }
         public DbSet<SYS_StandardAnswerType> SysStandardAnswerTypes { get; set; }
         public DbSet<SYS_StandardAnswer> SysStandardAnswers { get; set; }
+        public DbSet<SYS_PropGraphList> SysPropGraphsList { get; set; }
 
         #endregion
 
@@ -139,6 +140,8 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<LGN_tbl_Authority_Menu> LgnAuthorityMenus { get; set; }
         public DbSet<LGN_tbl_Authority_Section> LgnAuthoritySections { get; set; }
         public DbSet<LGN_tbl_Authority_Role> LgnAuthorityRoles { get; set; }
+        
+
         #endregion
 
         #region TA
