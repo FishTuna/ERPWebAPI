@@ -8,6 +8,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         [Key]
         public byte COLLAR_ID { get; set; }
         public string? COLLAR_NAME { get; set; }
-
+        public bool IS_ACTIVE { get; set; }
     }
 }
