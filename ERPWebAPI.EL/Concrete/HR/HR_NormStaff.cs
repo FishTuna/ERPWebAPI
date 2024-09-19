@@ -1,11 +1,13 @@
 ﻿
 
 using Core.Entities;
+using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.HR
 {
     public class HR_NormStaff :IEntity
     {
+        [Key]
         public int NormId { get; set; }
         public int CmbTableId { get; set; }
         public int ColumnId { get; set; }
