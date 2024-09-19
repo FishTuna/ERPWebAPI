@@ -79,7 +79,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<DashBoardListDetailDal>().As<IDashBoardListDetailDal>();
             #endregion
 
-            #region HR 
+            #region HR  
             builder.RegisterType<HR_cmb_BloodTypeDal>().As<IHR_cmb_BloodTypeDal>().SingleInstance();
             builder.RegisterType<HR_cmb_BloodTypeManager>().As<IHR_cmb_BloodTypeService<HR_cmb_BloodType, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_cmb_CollarDal>().As<IHR_cmb_CollarDal>().SingleInstance();
@@ -178,8 +178,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<HR_ResumeInterviewManager>().As<IHR_ResumeInterviewService<HR_ResumeInterview, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_ResumeHiringProcessResultDal>().As<IHR_ResumeHiringProcessResultDal>().SingleInstance();
             builder.RegisterType<HR_ResumeHiringProcessResultManager>().As<IHR_ResumeHiringProcessResultService<HR_ResumeHiringProcessResult, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_NormStaffDal>().As<IHR_NormStaffDal>().SingleInstance();
+            builder.RegisterType<HR_NormStaffManager>().As<IHR_NormStaffService<HR_NormStaff, SqlResult>>().SingleInstance();
 
-            #endregion
+            #endregion 
 
             #region SYS
 

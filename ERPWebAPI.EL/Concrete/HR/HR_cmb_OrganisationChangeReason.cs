@@ -8,5 +8,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         [Key]
         public byte CHANGE_REASON_ID { get; set; }
         public string CHANGE_REASON { get; set; }
+        public bool IS_ACTIVE { get; set; }
     }
 }
