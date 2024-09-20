@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ERPWebAPI.Controllers.SYS
 {
-    [Route("api/[controller]")]
+    [Route("api/SYS/[controller]")]
     [ApiController]
     public class OrganisationPyramidMatchController : ControllerBase
     {

@@ -10,6 +10,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         [Key]
         public int NormId { get; set; }
         public int CmbTableId { get; set; }
+        public string CmbDescription { get; set; }
         public int ColumnId { get; set; }
         public string? ColumnName { get; set; }
         public short FacilityId { get; set; }
