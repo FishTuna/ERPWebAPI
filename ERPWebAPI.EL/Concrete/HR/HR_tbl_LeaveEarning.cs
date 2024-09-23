@@ -10,7 +10,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         public short ID { get; set; }
         public byte LEAVE_EARNING_TYPE_ID { get; set; }
         public string? LEAVE_EARNING_TYPE { get; set; }
-        public byte AFFECTED_VACATION_ID { get; set; }
+        public short AFFECTED_VACATION_ID { get; set; }
         public string? AFFECTED_VACATION { get; set; }
         public byte BOTTOM_SENIORITY { get; set; }
         public byte TOP_SENIORITY { get; set; }
