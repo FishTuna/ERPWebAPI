@@ -7,17 +7,21 @@ namespace ERPWebAPI.EL.Concrete.HR
     {
 
         [Key]
-        public int RESIDENCE_INFO_ID { get; set; }
-        public string RESIDENCE_NAME { get; set; }
-        public int EMPLOYEE_ID { get; set; }
-        public short COUNTRY_ID { get; set; }
-        public int CITY_ID { get; set; }
-        public int TOWN_ID { get; set; }
-        public int DISTRICT_ID { get; set; }
-        public int REGION_ID { get; set; }
-        public string COMMENT { get; set; }
-        public DateTime TRANSACTION_DATE { get; set; }
-        public int USER_EMPLOYEE_ID { get; set; }
-        public string LOGIN_NAME { get; set; }
+        public int ResidenceInfoId { get; set; }
+        public string? ResidenceName { get; set; }
+        public int EmployeeId { get; set; }
+        public short CountryId { get; set; }
+        public string? Country { get; set; }
+        public int CityId { get; set; }
+        public string? City { get; set; }
+        public int Townıd { get; set; }
+        public string? Town { get; set; }
+        public int DistrictId { get; set; }
+        public string? District { get; set; }
+        public int RegionId { get; set; }
+        public string? Region { get; set; }
+        public string Comment { get; set; }
+        public DateTime? TransactionDate { get; set; }
+        public string? UserEmployee { get; set; }
     }
 }
