@@ -11,6 +11,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         public string? SchoolName { get; set; }
         public byte SchoolTypeId { get; set; }
         public string? SchoolType { get; set; }
+        public int SchoolLocationId { get; set; }
         public short SchoolCountryId { get; set; }
         public string? SchoolCountry { get; set; }
         public int SchoolCityId { get; set; }
