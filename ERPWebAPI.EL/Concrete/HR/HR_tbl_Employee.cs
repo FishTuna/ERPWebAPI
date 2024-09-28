@@ -7,34 +7,44 @@ namespace ERPWebAPI.EL.Concrete.HR
 
     {
         [Key]
-        public int EMPLOYEE_ID { get; set; }
-        public string? SOCIALSECURITYNO { get; set; } //= string.Empty;
-        public string? REGISTRYNO { get; set; } //= string.Empty;
-        public string? NAME { get; set; } //= string.Empty;
-        public string? SECONDNAME { get; set; } //= "";// string.Empty;
-        public string? LASTNAME { get; set; }// = string.Empty;
-        public string? SECONDLASTNAME { get; set; }// = string.Empty;
-        public DateTime? DATEofBIRTH { get; set; }// = default(DateTime);
-        public string? PLACEofBIRTH { get; set; } //= string.Empty;
-        public string? MOTHERSNAME { get; set; } //= string.Empty;
-        public string? FATHERSNAME { get; set; } //= string.Empty;
-        public byte MaritalSTATUS { get; set; } //= default(int);
-        public byte BLOODTYPE { get; set; }
-        public byte MILITARY_SERVICE_STATUS { get; set; }
-        public short COMPANY_ID { get; set; }
-        public short LOCATION_ID { get; set; }
-        public short COST_CENTER_ID { get; set; }
-        public short DEPARTMENT_ID { get; set; }
-        public short JOB_ID { get; set; }
-        public short POSITION_ID { get; set; }
-        public byte COLLAR_ID { get; set; }
-        public byte LEAVE_EARNING_TYPE_ID { get; set; }
-        public bool IS_TEMPORARY { get; set; }
-        public bool IS_RETIRED { get; set; }
-        public bool IS_CONVICTED { get; set; }
-        public bool IS_ACTIVE { get; set; }
-        public DateTime TRANSACTION_DATE { get; set; }
-        public int USER_EMPLOYEE_ID { get; set; }
-        public string LOGINNAME { get; set; }
+        public int EmployeeId { get; set; }
+        public string? SocialSecurityno { get; set; }
+        public string? RegistryNo { get; set; } 
+        public string? Name { get; set; }
+        public string? SecondName { get; set; } 
+        public string? LastName { get; set; }
+        public string? SecondLastName { get; set; }
+        public DateTime? DateOfBirth { get; set; }
+        public string? PlaceOfBirth { get; set; } 
+        public string? MothersName { get; set; } 
+        public string? FathersName { get; set; } 
+        public byte MaritalStatusId { get; set; } 
+        public string? MaritalStatus { get; set; }
+        public byte BloodTypeId { get; set; }
+        public string? BloodType { get; set; }
+        public byte MilitaryServiceStatusId { get; set; }
+        public string? MilitaryServiceStatus { get; set; }
+        public short CompanyId { get; set; }
+        public string? Company {  get; set; }
+        public short FacilityId { get; set; }
+        public string? Facility { get; set; }
+        public short CostCenterId { get; set; }
+        public string? CostCenter { get; set; }
+        public short DepartmentId { get; set; }
+        public string? Department { get; set; }
+        public short JobId { get; set; }
+        public string? Job { get; set; }
+        public short PositionId { get; set; }
+        public string? Position { get; set; }
+        public byte CollarId { get; set; }
+        public string? Collar { get; set; }
+        public byte LeaveEarningTypeId { get; set; }
+        public string? LeaveEarningType { get; set; }
+        public bool IsTemporary { get; set; }
+        public bool IsRetired { get; set; }
+        public bool IsConvicted { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime TransactionDate { get; set; }
+        public string UserEmployee { get; set; }
     }
 }

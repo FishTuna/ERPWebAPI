@@ -1,30 +1,29 @@
-﻿using ERPWebAPI.BL.Abstract.SYS;
+﻿using ERPWebAPI.BL.Abstract.HR;
+using ERPWebAPI.EL.Concrete.HR;
 using ERPWebAPI.EL.Concrete;
-using ERPWebAPI.EL.Concrete.SYS;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ERPWebAPI.Controllers.SYS
+namespace ERPWebAPI.Controllers.HR
 {
-    [Route("api/SYS/[controller]")]
+    [Route("api/HR/[controller]")]
     [ApiController]
-    public class OrganisationPyramidMatchController : ControllerBase
+    public class NormStaffController : ControllerBase
     {
-        readonly ISYS_tbl_OrganisationPyramidMatchService<SYS_tbl_OrganisationPyramidMatch, SqlResult> _organisationPyramidMatchService;
+        readonly IHR_NormStaffService<HR_NormStaff, SqlResult> _normStaffService;
 
-
-        public OrganisationPyramidMatchController(ISYS_tbl_OrganisationPyramidMatchService<SYS_tbl_OrganisationPyramidMatch, SqlResult> regionService)
+        public NormStaffController(IHR_NormStaffService<HR_NormStaff, SqlResult> NormStaffService)
         {
 
-            _organisationPyramidMatchService = regionService;
+            _normStaffService = NormStaffService;
 
         }
         [HttpGet("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataReader,Admin")]
-        [Authorize(Roles = "SYS,Admin")]
+        [Authorize(Roles = "HR,Admin")]
         public IActionResult GetAll([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _organisationPyramidMatchService.GetAllDataMngr(module, target, point, parameters);
+            var result = _normStaffService.GetAllDataMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -34,10 +33,10 @@ namespace ERPWebAPI.Controllers.SYS
 
         [HttpDelete("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataWriter,Admin")]
-        [Authorize(Roles = "SYS,Admin")]
+        [Authorize(Roles = "HR,Admin")]
         public IActionResult Delete([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _organisationPyramidMatchService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _normStaffService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -47,10 +46,10 @@ namespace ERPWebAPI.Controllers.SYS
 
         [HttpPost("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataWriter,Admin")]
-        [Authorize(Roles = "SYS,Admin")]
+        [Authorize(Roles = "HR,Admin")]
         public IActionResult Insert([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _organisationPyramidMatchService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _normStaffService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);
@@ -60,10 +59,10 @@ namespace ERPWebAPI.Controllers.SYS
 
         [HttpPut("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataWriter,Admin")]
-        [Authorize(Roles = "SYS,Admin")]
+        [Authorize(Roles = "HR,Admin")]
         public IActionResult Update([FromRoute] string module, [FromRoute] string target, [FromRoute] string point, [FromRoute] string parameters)
         {
-            var result = _organisationPyramidMatchService.ResultOperationsMngr(module, target, point, parameters);
+            var result = _normStaffService.ResultOperationsMngr(module, target, point, parameters);
             if (result.IsSuccess)
             {
                 return Ok(result.Data);

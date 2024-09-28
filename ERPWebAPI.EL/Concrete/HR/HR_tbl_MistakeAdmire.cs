@@ -6,13 +6,20 @@ namespace ERPWebAPI.EL.Concrete.HR
     public class HR_tbl_MistakeAdmire : IEntity
     {
         [Key]
-        public int ID { get; set; }
-        public int EMPLOYEE_ID { get; set; }
-        public byte TYPE_ID { get; set; }
-        public string? COMMENT { get; set; }
-        public string? CERTIFICATEPATH { get; set; }
-        public DateTime DATE { get; set; }
-        public int USER_EMPLOYEEID { get; set; }
-        public bool ISACTIVE { get; set; }
+        public int Id { get; set; }
+        public int EmployeeId { get; set; }
+        public string? Name { get; set; }
+        public string? LastName { get; set; }
+        public byte TypeId { get; set; }
+        public string? TypeName { get; set; }
+        public byte GroupId { get; set; }
+        public string? GroupName { get; set; }
+        public string? Comment { get; set; }
+        public int DocumentID { get; set; }
+        public string? DocumentPath { get; set; }
+        public DateTime? ValidityDate { get; set; }
+        public string? UserEmployee { get; set; }
+        public DateTime? TransactionDate { get; set; }
+        public bool IsActive { get; set; }
     }
 }

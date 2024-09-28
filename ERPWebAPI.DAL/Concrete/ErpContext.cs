@@ -70,6 +70,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<HR_tbl_ResidenceInfo> HrResidenceInfos { get; set; }
         public DbSet<HR_tbl_StartEndHistory> HrStartEndHistories { get; set; }
         public DbSet<HR_cmb_MistakeAdmireType> HrMistakeAdmireTypes { get; set; }
+        public DbSet<HR_cmb_MistakeAdmireGroup> HrMistakeAdmireGroups { get; set; }
         public DbSet<HR_tbl_MistakeAdmire> HrMistakeAdmires { get; set; }
         public DbSet<HR_tbl_EmployeePhoto> HrEmployeePhotos { get; set; }
         public DbSet<HR_tbl_LeaveEarning> HrAnnualLeaveEarnings { get; set; }
@@ -89,6 +90,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<HR_ResumeHiringStep>HR_ResumeHiringSteps { get; set; }
         public DbSet<HR_ResumeInterview> HR_ResumeInterviews { get; set; }
         public DbSet<HR_ResumeHiringProcessResult> HrResumeHiringProcessResults { get; set; }
+        public DbSet<HR_NormStaff> HrNormStaffes { get; set; }
 
 
         #endregion
@@ -153,7 +155,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<TA_WorkPlaceType> TaWorkPlaceTypes { get; set; }
 
         #endregion TA
-
+         
         #region OHS
           
         public DbSet<OHS_cmb_EmergencyJob> OhsEmergencyJobs { get; set; }
@@ -189,6 +191,8 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<OHS_TorkOccurrenceConsequence> OhsTorkOccurrenceConsequences { get; set; }
         public DbSet<OHS_TorkOccurrenceProbability> OhsTorkOccurrenceProbabilities { get; set; }
         public DbSet<OHS_TorkType> OhsTorkTypes { get; set; }
+        public DbSet<OHS_Industry> OhsIndustries { get; set; }
+        public DbSet<OHS_IndustrySection> OhsIndustrySections { get; set; }
 
         #endregion OHS
 

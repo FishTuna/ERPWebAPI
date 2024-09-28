@@ -7,9 +7,10 @@ namespace ERPWebAPI.EL.Concrete.HR
 
 
         [Key]
-        public byte VACATIONID { get; set; }
-        public string VACATIONNAME { get; set; }
-        public string VACATIONCODE { get; set; }
+        public short VACATIONID { get; set; }
+        public string? VACATIONNAME { get; set; }
+        public string? VACATIONCODE { get; set; }
+        public bool IS_ACTIVE { get; set; }
         public bool HOURLYUSAGE { get; set; }
         public bool PAIDVACATION { get; set; }
         public bool SOCIALSECURITY { get; set; }
@@ -22,6 +23,11 @@ namespace ERPWebAPI.EL.Concrete.HR
         public short MINHOURRESTRICTION { get; set; }
         public short MAXHOURRESTRICTION { get; set; }
         public short VESTINGPERIOD { get; set; }
+        public byte DATEPERIODTYPEID { get; set; }
+        public string? DATEPERIODTYPE { get; set; }
         public byte MISSINGDAYID { get; set; }
+        public string? MISSINGDAYREASON { get; set; }
+        public DateTime? TRANSACTIONDATE {  get; set; }
+        public string? USEREMPLOYEE { get; set; }
     }
 }
