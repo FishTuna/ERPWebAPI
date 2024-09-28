@@ -8,16 +8,29 @@ namespace ERPWebAPI.EL.Concrete.HR
     public class HR_tbl_EducationInfo : IEntity
     {
         [Key]
-        public int EDUCATION_ID { get; set; }
-        public int EMPLOYEE_ID { get; set; }
-        public byte SCHOOL_TYPE_ID { get; set; }
-        public byte GRADUATION_TYPE_ID { get; set; }
-        public int SCHOOL_ID { get; set; }
-        public byte EDUCATION_STATUS_ID { get; set; }
-        public int SCHOOL_DEPARTMENT_ID { get; set; }
-        public DateTime GRADUATION_DATE { get; set; }
-        public int DOCUMENT_ID { get; set; }
-        public DateTime TRANSACTION_DATE { get; set; }
-        public string LOGIN_NAME { get; set; }
+            public int EducationId { get; set; }
+            public int EmployeeId { get; set; }
+            public byte SchoolTypeId { get; set; }
+            public string? SchoolType { get; set; }
+            public byte GraduationTypeId { get; set; }
+            public string? GraduationType { get; set; }
+            public int SchoolId { get; set; }
+            public string? SchoolName { get; set; }
+            public byte EducationStatusId { get; set; }
+            public string? EducationStatus { get; set; }
+            public int SchoolDepartmentId { get; set; }
+            public string? SchoolDepartment { get; set; }
+            public string? SchoolNameCountryCity { get; set; }
+            public string? SchoolCountryCity { get; set; }
+            public DateTime? GraduationDate { get; set; }
+            public int DocumentId { get; set; }
+            public string? DocumentPath { get; set; }
+            public short SchoolCountryId { get; set; }
+            public string? SchoolCountryName { get; set; }
+            public int SchoolCityId { get; set; }
+            public string? SchoolCityName { get; set; }
+            public DateTime? TransactionDate { get; set; }
+            public string? UserEmployee { get; set; }
+        }
     }
-}
+

@@ -2,7 +2,6 @@
 using ERPWebAPI.EL.Concrete.SYS;
 using ERPWebAPI.EL.Concrete;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERPWebAPI.Controllers.SYS

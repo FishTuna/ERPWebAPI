@@ -13,7 +13,7 @@ namespace ERPWebAPI.EL.Concrete.HR
         public string? EMPLOYEE_LASTNAME { get; set; }
         public string? REGISTRY_NO { get; set; }
         public int FORMID { get; set; }
-        public byte VACATIONID { get; set; }
+        public short VACATIONID { get; set; }
         public string? VACATION_NAME { get; set; }
         public byte VACATION_GROUP_ID { get; set; }
         public string? VACATION_GROUP_NAME { get; set; }

@@ -10,5 +10,6 @@ namespace ERPWebAPI.EL.Concrete.HR
         public byte GRADUATIONTYPEID { get; set; }
         public string GRADUATIONTYPE { get; set; }
         public byte SCHOOL_TYPE_ID { get; set; }
+        public string? SCHOOL_TYPE { get; set; }
     }
 }

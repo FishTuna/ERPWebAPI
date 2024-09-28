@@ -5,10 +5,6 @@ namespace ERPWebAPI.EL.Concrete.SYS
 {
     public class SYS_cmb_Country : IEntity
     {
-        public SYS_cmb_Country()
-        {
-
-        }
 
         [Key]
         public short COUNTRYID { get; set; }

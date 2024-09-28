@@ -6,12 +6,15 @@ namespace ERPWebAPI.EL.Concrete.SYS
     public class SYS_tbl_OrganisationPyramidMatch :IEntity
     {
         [Key]
-        public short MATCH_ID { get; set; }
-        public short POSITION_ID { get; set; }
-        public short TITLE_ID { get; set; }
-        public short PARENT_TITLE_ID { get; set; }
-        public bool IS_ACTIVE { get; set; }
-        public DateTime TRANSACTION_DATE { get; set; }
-        public int USER_EMPLOYEE_ID { get; set; }
+        public short MatchId { get; set; }
+        public short PositionId { get; set; }
+        public string? PositionName { get; set; }
+        public short TitleId { get; set; }
+        public string? TitleName { get; set; }
+        public short ParentTitleId { get; set; }
+        public string? ParentTitleName { get; set; }
+        public bool IsActive { get; set; }
+        public DateTime? TransactionDate { get; set; }
+        public string? UserEmployee { get; set; }
     }
 }

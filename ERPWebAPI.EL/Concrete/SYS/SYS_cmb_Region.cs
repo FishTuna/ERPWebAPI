@@ -8,8 +8,11 @@ namespace ERPWebAPI.EL.Concrete.SYS
     {
 
         [Key]
-        public int REGIONID { get; set; }
-        public string? REGIONNAME { get; set; }
-        public int DISTRICTID { get; set; }
+        public int RegionId { get; set; }
+        public string? Region { get; set; }
+        public int DistrictId { get; set; }
+        public string? District { get; set; }
+        public string? UserEmployee {  get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }

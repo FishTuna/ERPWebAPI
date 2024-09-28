@@ -7,8 +7,15 @@ namespace ERPWebAPI.EL.Concrete.HR
     {
 
         [Key]
-        public int SCHOOL_DEPARTMENT_ID { get; set; }
-        public string SCHOOL_DEPARTMENT_NAME { get; set; }
-        public byte SCHOOL_TYPE_ID { get; set; }
+        public int SchoolDepartmentId { get; set; }
+        public bool IsActive { get; set; }
+        public string? SchoolDepartment { get; set; }
+        public byte SchoolTypeId { get; set; }
+        public string? SchoolType { get; set; }
+        public byte GraduationTypeId { get; set; }
+        public string GraduationType { get; set; }
+        public int DepartmentCode { get; set; }
+        public string? UserEmployee { get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }

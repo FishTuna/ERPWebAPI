@@ -6,11 +6,11 @@ namespace ERPWebAPI.EL.Concrete.HR
     public class HR_tbl_VacationGroupContent : IEntity
     {
         [Key]
-        public short CONTENT_ID { get; set; }
-        public byte VACATION_GROUP_ID { get; set; }
-        public byte VACATION_TYPE_ID { get; set; }
-        public int USER_EMPLOYEE_ID { get; set; }
-        public string LOGIN_NAME { get; set; }
-        public DateTime TRANSACTION_DATE { get; set; }
-}
+        public short ContentId { get; set; }
+        public short VacationGroupId { get; set; }
+        public byte VacationTypeId { get; set; }
+        public string? VacationType { get; set; }
+        public string? UserEmployee { get; set; }
+        public DateTime TransactionDate { get; set; }
+    }
 }
