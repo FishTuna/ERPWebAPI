@@ -146,6 +146,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<HR_tbl_MistakeAdmireManager>().As<IHR_tbl_MistakeAdmireService<HR_tbl_MistakeAdmire, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_cmb_MistakeAdmireTypeDal>().As<IHR_cmb_MistakeAdmireTypeDal>().SingleInstance();
             builder.RegisterType<HR_cmb_MistakeAdmireTypeManager>().As<IHR_cmb_MistakeAdmireTypeService<HR_cmb_MistakeAdmireType, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_cmb_MistakeAdmireGroupDal>().As<IHR_cmb_MistakeAdmireGroupDal>().SingleInstance();
+            builder.RegisterType<HR_cmb_MistakeAdmireGroupManager>().As<IHR_cmb_MistakeAdmireGroupService<HR_cmb_MistakeAdmireGroup, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_tbl_EducationInfoDal>().As<IHR_tbl_EducationInfoDal>().SingleInstance();
             builder.RegisterType<HR_tbl_EducationInfoManager>().As<IHR_tbl_EducationInfoService<HR_tbl_EducationInfo, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_tbl_VacationGroupContentDal>().As<IHR_tbl_VacationGroupContentDal>().SingleInstance();
@@ -292,7 +294,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<TA_WorkPlaceTypeManager>().As<ITA_WorkPlaceTypeService<TA_WorkPlaceType, SqlResult>>().SingleInstance();
 
             #endregion TA
-
+             
             #region OHS
 
             builder.RegisterType<OHS_cmb_EmergencyJobDal>().As<IOHS_cmb_EmergencyJobDal>().SingleInstance();
@@ -359,6 +361,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_TorkOccurrenceProbabilityManager>().As<IOHS_TorkOccurrenceProbabilityService<OHS_TorkOccurrenceProbability, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TorkTypeDal>().As<IOHS_TorkTypeDal>().SingleInstance();
             builder.RegisterType<OHS_TorkTypeManager>().As<IOHS_TorkTypeService<OHS_TorkType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_IndustrySectionDal>().As<IOHS_IndustrySectionDal>().SingleInstance();
+            builder.RegisterType<OHS_IndustrySectionManager>().As<IOHS_IndustrySectionService<OHS_IndustrySection, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_IndustryDal>().As<IOHS_IndustryDal>().SingleInstance();
+            builder.RegisterType<OHS_IndustryManager>().As<IOHS_IndustryService<OHS_Industry, SqlResult>>().SingleInstance();
 
             #endregion OHS
 

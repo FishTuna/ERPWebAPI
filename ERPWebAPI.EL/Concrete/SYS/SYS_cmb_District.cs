@@ -5,15 +5,14 @@ namespace ERPWebAPI.EL.Concrete.SYS
 {
     public class SYS_cmb_District : IEntity
     {
-        public SYS_cmb_District()
-        {
-
-        }
 
         [Key]
-        public int DISTRICTID { get; set; }
-        public string DISTRICTNAME { get; set; }
-        public int TOWNID { get; set; }
-        public string POSTALCODE { get; set; }
+        public int DistrictId { get; set; }
+        public string? District { get; set; }
+        public int TownId { get; set; }
+        public string? PostalCode { get; set; }
+        public string? Town { get; set; }
+        public string? UserEmployee { get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }
