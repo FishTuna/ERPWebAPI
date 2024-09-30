@@ -193,6 +193,8 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<OHS_TorkType> OhsTorkTypes { get; set; }
         public DbSet<OHS_Industry> OhsIndustries { get; set; }
         public DbSet<OHS_IndustrySection> OhsIndustrySections { get; set; }
+        public DbSet<OHS_NaceCode> OhsNaceCodes { get; set; }
+        public DbSet<OHS_DangerClass> OhsDangerClasses { get; set; }
 
         #endregion OHS
 

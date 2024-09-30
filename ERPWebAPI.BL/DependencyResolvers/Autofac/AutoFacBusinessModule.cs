@@ -365,6 +365,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_IndustrySectionManager>().As<IOHS_IndustrySectionService<OHS_IndustrySection, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_IndustryDal>().As<IOHS_IndustryDal>().SingleInstance();
             builder.RegisterType<OHS_IndustryManager>().As<IOHS_IndustryService<OHS_Industry, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_DangerClassDal>().As<IOHS_DangerClassDal>().SingleInstance();
+            builder.RegisterType<OHS_DangerClassManager>().As<IOHS_DangerClassService<OHS_DangerClass, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_NaceCodeDal>().As<IOHS_NaceCodeDal>().SingleInstance();
+            builder.RegisterType<OHS_NaceCodeManager>().As<IOHS_NaceCodeService<OHS_NaceCode, SqlResult>>().SingleInstance();
 
             #endregion OHS
 
