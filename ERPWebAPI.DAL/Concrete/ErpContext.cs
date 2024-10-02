@@ -200,6 +200,7 @@ namespace ERPWebAPI.DAL.Concrete
 
         #region PRF
 
+        public DbSet<PRF_PendingPeriod> PrfPendingPeriods { get; set; }
         public DbSet<PRF_tbl_EmployeeList> PrfEmployeesList { get; set; }
         public DbSet<PRF_cmb_AnswerRating> PrfAnswerRatings { get; set; }
         public DbSet<PRF_cmb_AnswerRatingGroup> PrfAnswerRatingGroups { get; set; }

@@ -429,6 +429,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<PRF_tbl_OrganizationScoreCardManager>().As<IPRF_tbl_OrganizationScoreCardService<PRF_tbl_OrganizationScoreCard, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_OrganizationTargetDal>().As<IPRF_tbl_OrganizationTargetDal>().SingleInstance();
             builder.RegisterType<PRF_tbl_OrganizationTargetManager>().As<IPRF_tbl_OrganizationTargetService<PRF_tbl_OrganizationTarget, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_PendingPeriodDal>().As<IPRF_PendingPeriodDal>().SingleInstance();
+            builder.RegisterType<PRF_PendingPeriodManager>().As<IPRF_PendingPeriodService<PRF_PendingPeriod, SqlResult>>().SingleInstance();
 
             #endregion PRF
 
