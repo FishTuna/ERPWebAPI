@@ -9,10 +9,11 @@ namespace ERPWebAPI.EL.Concrete.LGN
     {
 
         [Key]
-        public int ID { get; set; }
-        public int SECTION_ID { get; set; }
-        public string SECTION_NAME { get; set; }
-        public int MENU_ID { get; set; }
-        public byte AUTHORITY_TYPE { get; set; }
+        public int RowNumber { get; set; }
+        public int SectionId { get; set; }
+        public string? Section { get; set; }
+        public int MenuId { get; set; }
+        public string? MenuName { get; set; }
+        public byte Authority { get; set; }
     }
 }

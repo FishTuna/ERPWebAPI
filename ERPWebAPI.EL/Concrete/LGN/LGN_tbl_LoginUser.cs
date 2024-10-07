@@ -7,11 +7,15 @@ namespace ERPWebAPI.EL.Concrete.LGN
     {
 
         [Key]
-        public int LOGIN_ID { get; set; }
-        public string LOGIN_NAME { get; set; }
-        public string PASSWORD { get; set; }
-        public bool IS_ADMIN { get; set; }
-        public int EMPLOYEE_ID { get; set; }
-        public bool LOGIN_STATUS { get; set; }
+        public int LoginId { get; set; }
+        public string? LoginName { get; set; }
+        public string? Password { get; set; }
+        public bool IsAdmin { get; set; }
+        public int EmployeeId { get; set; }
+        public string? Employee {  get; set; }
+        public bool IsAdUser { get; set; }
+        public bool IsPrfAdmin { get; set; }
+        public string? UserEmployee {  get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }

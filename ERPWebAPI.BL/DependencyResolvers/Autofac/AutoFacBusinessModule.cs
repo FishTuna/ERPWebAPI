@@ -182,6 +182,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<HR_ResumeHiringProcessResultManager>().As<IHR_ResumeHiringProcessResultService<HR_ResumeHiringProcessResult, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_NormStaffDal>().As<IHR_NormStaffDal>().SingleInstance();
             builder.RegisterType<HR_NormStaffManager>().As<IHR_NormStaffService<HR_NormStaff, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_HolidayDal>().As<IHR_HolidayDal>().SingleInstance();
+            builder.RegisterType<HR_HolidayManager>().As<IHR_HolidayService<HR_Holiday, SqlResult>>().SingleInstance();
 
             #endregion 
 
@@ -261,10 +263,13 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
 
 
             #endregion
+             
+            #region LGN 
 
-            #region LGN
             builder.RegisterType<LGN_cmb_MenuDal>().As<ILGN_cmb_MenuDal>().SingleInstance();
             builder.RegisterType<LGN_cmb_MenuManager>().As<ILGN_cmb_MenuService<LGN_cmb_Menu, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_AuthorityFieldDal>().As<ILGN_AuthorityFieldDal>().SingleInstance();
+            builder.RegisterType<LGN_AuthorityFieldManager>().As<ILGN_AuthorityFieldService<LGN_tbl_Authority_Field, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_cmb_RoleDal>().As<ILGN_cmb_RoleDal>().SingleInstance();
             builder.RegisterType<LGN_cmb_RoleManager>().As<ILGN_cmb_RoleService<LGN_cmb_Role, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_cmb_SectionDal>().As<ILGN_cmb_SectionDal>().SingleInstance();
@@ -277,8 +282,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<LGN_tbl_AuthorityRoleManager>().As<ILGN_tbl_AuthorityRoleService<LGN_tbl_Authority_Role, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_tbl_AuthoritySectionDal>().As<ILGN_tbl_AuthoritySectionDal>().SingleInstance();
             builder.RegisterType<LGN_tbl_AuthoritySectionManager>().As<ILGN_tbl_AuthoritySectionService<LGN_tbl_Authority_Section, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_FieldDal>().As<ILGN_FieldDal>().SingleInstance();
+            builder.RegisterType<LGN_FieldManager>().As<ILGN_FieldService<LGN_Field, SqlResult>>().SingleInstance();
 
-            #endregion
+            #endregion 
 
             #region TA
 
@@ -365,6 +372,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_IndustrySectionManager>().As<IOHS_IndustrySectionService<OHS_IndustrySection, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_IndustryDal>().As<IOHS_IndustryDal>().SingleInstance();
             builder.RegisterType<OHS_IndustryManager>().As<IOHS_IndustryService<OHS_Industry, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_DangerClassDal>().As<IOHS_DangerClassDal>().SingleInstance();
+            builder.RegisterType<OHS_DangerClassManager>().As<IOHS_DangerClassService<OHS_DangerClass, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_NaceCodeDal>().As<IOHS_NaceCodeDal>().SingleInstance();
+            builder.RegisterType<OHS_NaceCodeManager>().As<IOHS_NaceCodeService<OHS_NaceCode, SqlResult>>().SingleInstance();
 
             #endregion OHS
 
@@ -425,6 +436,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<PRF_tbl_OrganizationScoreCardManager>().As<IPRF_tbl_OrganizationScoreCardService<PRF_tbl_OrganizationScoreCard, SqlResult>>().SingleInstance();
             builder.RegisterType<PRF_tbl_OrganizationTargetDal>().As<IPRF_tbl_OrganizationTargetDal>().SingleInstance();
             builder.RegisterType<PRF_tbl_OrganizationTargetManager>().As<IPRF_tbl_OrganizationTargetService<PRF_tbl_OrganizationTarget, SqlResult>>().SingleInstance();
+            builder.RegisterType<PRF_PendingPeriodDal>().As<IPRF_PendingPeriodDal>().SingleInstance();
+            builder.RegisterType<PRF_PendingPeriodManager>().As<IPRF_PendingPeriodService<PRF_PendingPeriod, SqlResult>>().SingleInstance();
 
             #endregion PRF
 

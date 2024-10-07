@@ -8,8 +8,13 @@ namespace ERPWebAPI.EL.Concrete.LGN
     public class LGN_tbl_Authority_Role : IEntity
     {
         [Key]
-        public int ID { get; set; }
-        public int ROLE_ID { get; set; }
-        public int EMPLOYEE_ID { get; set; }
+        public int Id { get; set; }
+        public int RoleId { get; set; }
+        public string? RoleName { get; set; }
+        public int LoginId { get; set; }
+        public int EmployeeId { get; set; }
+        public string? Employee {  get; set; }
+        public string? UserEmployee {  get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }
