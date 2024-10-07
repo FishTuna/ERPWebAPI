@@ -2,7 +2,7 @@
 
 namespace ERPWebAPI.BL.Abstract.LGN
 {
-    public interface ILGN_tbl_AuthoritySectionService<TEntity, TSqlResult> : ICommonBLOperationsService<TEntity, TSqlResult>
+    public interface ILGN_tbl_AuthoritySectionService<TEntity,TSqlResult>: ICommonBLOperationsService<TEntity, TSqlResult>
     {
     }
 }

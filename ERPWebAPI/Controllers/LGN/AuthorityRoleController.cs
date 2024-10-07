@@ -10,9 +10,9 @@ namespace ERPWebAPI.Controllers.LGN
     [ApiController]
     public class AuthorityRoleController : ControllerBase
     {
-        readonly ILGN_tbl_AuthorityRoleService<LGN_cmb_Role, SqlResult> _tbl_AuthorityRoleService;
+        readonly ILGN_tbl_AuthorityRoleService<LGN_tbl_Authority_Role, SqlResult> _tbl_AuthorityRoleService;
 
-        public AuthorityRoleController(ILGN_tbl_AuthorityRoleService<LGN_cmb_Role, SqlResult> cmb_AuthorityRoleService)
+        public AuthorityRoleController(ILGN_tbl_AuthorityRoleService<LGN_tbl_Authority_Role, SqlResult> cmb_AuthorityRoleService)
         {
             _tbl_AuthorityRoleService = cmb_AuthorityRoleService;
         }

@@ -264,7 +264,7 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
 
             #endregion
              
-            #region LGN 
+            #region LGN
 
             builder.RegisterType<LGN_cmb_MenuDal>().As<ILGN_cmb_MenuDal>().SingleInstance();
             builder.RegisterType<LGN_cmb_MenuManager>().As<ILGN_cmb_MenuService<LGN_cmb_Menu, SqlResult>>().SingleInstance();
@@ -284,6 +284,14 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<LGN_tbl_AuthoritySectionManager>().As<ILGN_tbl_AuthoritySectionService<LGN_tbl_Authority_Section, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_FieldDal>().As<ILGN_FieldDal>().SingleInstance();
             builder.RegisterType<LGN_FieldManager>().As<ILGN_FieldService<LGN_Field, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_RoleFieldDal>().As<ILGN_RoleFieldDal>().SingleInstance();
+            builder.RegisterType<LGN_RoleFieldManager>().As<ILGN_RoleFieldService<LGN_RoleField, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_RoleSectionDal>().As<ILGN_RoleSectionDal>().SingleInstance();
+            builder.RegisterType<LGN_RoleSectionManager>().As<ILGN_RoleSectionService<LGN_RoleSection, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_RoleMenuDal>().As<ILGN_RoleMenuDal>().SingleInstance();
+            builder.RegisterType<LGN_RoleMenuManager>().As<ILGN_RoleMenuService<LGN_RoleMenu, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_RoleModuleDal>().As<ILGN_RoleModuleDal>().SingleInstance();
+            builder.RegisterType<LGN_RoleModuleManager>().As<ILGN_RoleModuleService<LGN_RoleModule, SqlResult>>().SingleInstance();
 
             #endregion 
 
