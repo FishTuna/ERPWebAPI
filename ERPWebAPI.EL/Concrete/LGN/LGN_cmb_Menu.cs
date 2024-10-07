@@ -6,8 +6,10 @@ namespace ERPWebAPI.EL.Concrete.LGN
     public class LGN_cmb_Menu : IEntity
     {
         [Key]
-        public int MENU_ID { get; set; }
-        public string MENU_NAME { get; set; }
-        public byte MODULE_ID { get; set; }
+        public int MenuId { get; set; }
+        public string? MenuName { get; set; }
+        public byte ModuleId { get; set; }
+        public string? Module {  get; set; }
+        public string? ModuleCode { get; set; }
     }
 }

@@ -50,6 +50,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<HR_cmb_EducationStatu> HrEducationStatus { get; set; }
         public DbSet<HR_cmb_GraduationType> HrGraduationTypes { get; set; }
         public DbSet<HR_cmb_Job> HrJobs { get; set; }
+        public DbSet<HR_Holiday> HrHolidays { get; set; }
         public DbSet<HR_cmb_Location> HrLocations { get; set; }
         public DbSet<HR_cmb_MaritalStatu> HrMaritalStatus { get; set; }
         public DbSet<HR_cmb_MilitaryStatusType> HrMilitaryStatusTypes { get; set; }
@@ -142,7 +143,9 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<LGN_tbl_Authority_Menu> LgnAuthorityMenus { get; set; }
         public DbSet<LGN_tbl_Authority_Section> LgnAuthoritySections { get; set; }
         public DbSet<LGN_tbl_Authority_Role> LgnAuthorityRoles { get; set; }
-        
+        public DbSet<LGN_tbl_Authority_Field> LgnAuthorityFields { get; set; }
+        public DbSet<LGN_Field> LgnFields { get; set; }
+
 
         #endregion
 

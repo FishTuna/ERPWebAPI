@@ -8,8 +8,12 @@ namespace ERPWebAPI.EL.Concrete.LGN
     public class LGN_cmb_Section : IEntity
     {
         [Key]
-        public int SECTION_ID { get; set; }
-        public string SECTION_NAME { get; set; }
-        public byte MODULE_ID { get; set; }
+        public int SectionId { get; set; }
+        public string? Section { get; set; }
+        public int MenuId { get; set; }
+        public string? MenuName { get; set; }
+        public byte ModuleId { get; set; }
+        public string? Module { get; set; }
+        public string? ModuleCode { get; set; }
     }
 }

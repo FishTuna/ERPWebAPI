@@ -182,6 +182,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<HR_ResumeHiringProcessResultManager>().As<IHR_ResumeHiringProcessResultService<HR_ResumeHiringProcessResult, SqlResult>>().SingleInstance();
             builder.RegisterType<HR_NormStaffDal>().As<IHR_NormStaffDal>().SingleInstance();
             builder.RegisterType<HR_NormStaffManager>().As<IHR_NormStaffService<HR_NormStaff, SqlResult>>().SingleInstance();
+            builder.RegisterType<HR_HolidayDal>().As<IHR_HolidayDal>().SingleInstance();
+            builder.RegisterType<HR_HolidayManager>().As<IHR_HolidayService<HR_Holiday, SqlResult>>().SingleInstance();
 
             #endregion 
 
@@ -261,10 +263,13 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
 
 
             #endregion
+             
+            #region LGN 
 
-            #region LGN
             builder.RegisterType<LGN_cmb_MenuDal>().As<ILGN_cmb_MenuDal>().SingleInstance();
             builder.RegisterType<LGN_cmb_MenuManager>().As<ILGN_cmb_MenuService<LGN_cmb_Menu, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_AuthorityFieldDal>().As<ILGN_AuthorityFieldDal>().SingleInstance();
+            builder.RegisterType<LGN_AuthorityFieldManager>().As<ILGN_AuthorityFieldService<LGN_tbl_Authority_Field, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_cmb_RoleDal>().As<ILGN_cmb_RoleDal>().SingleInstance();
             builder.RegisterType<LGN_cmb_RoleManager>().As<ILGN_cmb_RoleService<LGN_cmb_Role, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_cmb_SectionDal>().As<ILGN_cmb_SectionDal>().SingleInstance();
@@ -277,8 +282,10 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<LGN_tbl_AuthorityRoleManager>().As<ILGN_tbl_AuthorityRoleService<LGN_tbl_Authority_Role, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_tbl_AuthoritySectionDal>().As<ILGN_tbl_AuthoritySectionDal>().SingleInstance();
             builder.RegisterType<LGN_tbl_AuthoritySectionManager>().As<ILGN_tbl_AuthoritySectionService<LGN_tbl_Authority_Section, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_FieldDal>().As<ILGN_FieldDal>().SingleInstance();
+            builder.RegisterType<LGN_FieldManager>().As<ILGN_FieldService<LGN_Field, SqlResult>>().SingleInstance();
 
-            #endregion
+            #endregion 
 
             #region TA
 

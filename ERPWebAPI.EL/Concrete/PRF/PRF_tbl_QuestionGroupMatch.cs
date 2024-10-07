@@ -9,6 +9,7 @@ namespace ERPWebAPI.EL.Concrete.PRF
         public int MATCH_ID { get; set; }
         public short GROUP_ID { get; set; }
         public string? GROUP_NAME { get; set; }
+        public bool IS_MATCH_ACTIVE { get; set; }
         public bool IS_GROUP_ACTIVE { get; set;}
         public short TITLE_ID { get; set; }
         public string? TITLE { get; set; }
