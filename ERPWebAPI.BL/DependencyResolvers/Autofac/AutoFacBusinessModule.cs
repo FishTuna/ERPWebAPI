@@ -292,6 +292,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<LGN_RoleMenuManager>().As<ILGN_RoleMenuService<LGN_RoleMenu, SqlResult>>().SingleInstance();
             builder.RegisterType<LGN_RoleModuleDal>().As<ILGN_RoleModuleDal>().SingleInstance();
             builder.RegisterType<LGN_RoleModuleManager>().As<ILGN_RoleModuleService<LGN_RoleModule, SqlResult>>().SingleInstance();
+            builder.RegisterType<LGN_PasswordPolicyDal>().As<ILGN_PasswordPolicyDal>().SingleInstance();
+            builder.RegisterType<LGN_PasswordPolicyManager>().As<ILGN_PasswordPolicyService<LGN_PasswordPolicy, SqlResult>>().SingleInstance();
 
             #endregion 
 

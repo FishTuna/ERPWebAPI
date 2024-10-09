@@ -15,6 +15,7 @@ namespace ERPWebAPI.EL.Concrete.LGN
         public string? Employee {  get; set; }
         public bool IsAdUser { get; set; }
         public bool IsPrfAdmin { get; set; }
+        public bool IsLocked { get; set; }
         public string? UserEmployee {  get; set; }
         public DateTime? TransactionDate { get; set; }
     }

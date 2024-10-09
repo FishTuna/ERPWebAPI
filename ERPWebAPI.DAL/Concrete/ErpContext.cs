@@ -145,6 +145,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<LGN_tbl_Authority_Role> LgnAuthorityRoles { get; set; }
         public DbSet<LGN_tbl_Authority_Field> LgnAuthorityFields { get; set; }
         public DbSet<LGN_Field> LgnFields { get; set; }
+        public DbSet<LGN_PasswordPolicy> LgnPasswordPolicies { get; set; }
         public DbSet<LGN_RoleField> LgnRoleFields { get; set; }
         public DbSet<LGN_RoleModule> LgnRoleModules { get; set; }
         public DbSet<LGN_RoleMenu> LgnRoleMenus { get; set; }
