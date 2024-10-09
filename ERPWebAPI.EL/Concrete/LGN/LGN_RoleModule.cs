@@ -12,6 +12,7 @@ namespace ERPWebAPI.EL.Concrete.LGN
         public int RoleId { get; set; }
         public byte ModuleId { get; set; }
         public string? Module { get; set; }
+        public byte Authority { get; set; }
         public string? ModuleCode { get; set; }
     }
 }
