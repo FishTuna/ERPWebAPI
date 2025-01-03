@@ -23,7 +23,7 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public bool IsTorkOwnerEmployee { get; set; }
         public int? TorkOwnerEmployeeId { get; set; }
         public string? TorkOwnerName { get; set; }
-        public bool InformSupervısor { get; set; }
+        public bool InformSupervisor { get; set; }
         public string UserName { get; set; }
         public DateTime TransactionDate { get; set; }
     }
