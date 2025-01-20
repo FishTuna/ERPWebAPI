@@ -1,11 +1,12 @@
 ﻿
 
-using Core.Utilities.Results;
+
 using ERPWebAPI.BL.Abstract.LGN;
 using ERPWebAPI.BL.Constants;
 using ERPWebAPI.DAL.Abstract.LGN;
 using ERPWebAPI.EL.Concrete.LGN;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.Core.Utilities.Results;
 
 namespace ERPWebAPI.BL.Concrete.LGN
 {

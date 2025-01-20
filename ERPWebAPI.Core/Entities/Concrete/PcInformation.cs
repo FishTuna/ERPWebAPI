@@ -1,7 +1,6 @@
-﻿
-using System.Net;
+﻿using System.Net;
 
-namespace Core.Entities.Concrete
+namespace ERPWebAPI.Core.Entities.Concrete
 {
     public class PcInformation
     {

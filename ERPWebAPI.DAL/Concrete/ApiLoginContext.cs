@@ -1,5 +1,5 @@
-﻿using Core.Entities.Concrete;
-using Core.Invocations;
+﻿using ERPWebAPI.Core.Entities.Concrete;
+using ERPWebAPI.Core.Invocations;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete

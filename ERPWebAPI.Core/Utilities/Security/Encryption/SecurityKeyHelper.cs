@@ -1,7 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 using System.Text;
 
-namespace Core.Utilities.Security.Encryption
+namespace ERPWebAPI.Core.Utilities.Security.Encryption
 {
     public class SecurityKeyHelper
     {

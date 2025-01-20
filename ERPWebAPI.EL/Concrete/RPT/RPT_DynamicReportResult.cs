@@ -1,4 +1,4 @@
-﻿using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 using System.Dynamic;
 
 namespace ERPWebAPI.EL.Concrete.RPT

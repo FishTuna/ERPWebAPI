@@ -1,5 +1,4 @@
-﻿
-using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.PRF

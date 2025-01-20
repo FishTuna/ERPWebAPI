@@ -1,12 +1,12 @@
-﻿using Core.Entities.Concrete;
-using Core.Extensions;
-using Core.Utilities.Security.Encryption;
+﻿using ERPWebAPI.Core.Entities.Concrete;
+using ERPWebAPI.Core.Extensions;
+using ERPWebAPI.Core.Utilities.Security.Encryption;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
 using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 
-namespace Core.Utilities.Security.JWT
+namespace ERPWebAPI.Core.Utilities.Security.JWT
 {
     public class JwtHelper : ITokenHelper
     {

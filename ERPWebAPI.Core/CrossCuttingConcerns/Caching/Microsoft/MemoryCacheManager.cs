@@ -1,9 +1,10 @@
-﻿using Core.Utilities.IoC;
+﻿using ERPWebAPI.Core.CrossCuttingConcerns.Caching;
+using ERPWebAPI.Core.Utilities.IoC;
 using Microsoft.Extensions.Caching.Memory;
 using Microsoft.Extensions.DependencyInjection;
 using System.Text.RegularExpressions;
 
-namespace Core.CrossCuttingConcerns.Caching.Microsoft
+namespace ERPWebAPI.Core.CrossCuttingConcerns.Caching.Microsoft
 {
     public class MemoryCacheManager : ICacheManager
     {

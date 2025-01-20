@@ -1,5 +1,4 @@
-﻿using Core.Utilities.Results;
-using ERPWebAPI.EL.Concrete.RPT;
+﻿using ERPWebAPI.Core.Utilities.Results;
 using System.Dynamic;
 
 namespace ERPWebAPI.BL.Abstract.RPT

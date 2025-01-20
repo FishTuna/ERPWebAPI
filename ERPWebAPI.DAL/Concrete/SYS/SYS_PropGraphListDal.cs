@@ -1,6 +1,4 @@
 ﻿
-
-using Core.Utilities.Results;
 using ERPWebAPI.DAL.Abstract.SYS;
 using ERPWebAPI.EL.Concrete;
 using ERPWebAPI.EL.Concrete.SYS;

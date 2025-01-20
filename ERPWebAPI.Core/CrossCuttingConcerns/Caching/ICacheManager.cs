@@ -1,4 +1,4 @@
-﻿namespace Core.CrossCuttingConcerns.Caching
+﻿namespace ERPWebAPI.Core.CrossCuttingConcerns.Caching
 {
     public interface ICacheManager
     {

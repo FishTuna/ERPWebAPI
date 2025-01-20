@@ -1,7 +1,6 @@
-﻿
-using Core.BL;
+﻿using ERPWebAPI.Core.BL;
 
-namespace ERPWebAPI.DAL.Concrete.OHS
+namespace ERPWebAPI.BL.Abstract.OHS
 {
     public interface IOHS_tbl_EmergencyEmpJobService<TEntity, TSqlResult> : ICommonBLOperationsService<TEntity, TSqlResult>
     {

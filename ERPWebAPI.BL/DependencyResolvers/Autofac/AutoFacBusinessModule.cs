@@ -1,8 +1,6 @@
 ﻿using Autofac;
 using Autofac.Extras.DynamicProxy;
 using Castle.DynamicProxy;
-using Core.Utilities.Interceptors;
-using Core.Utilities.Security.JWT;
 using ERPWebAPI.BL.Abstract;
 using ERPWebAPI.BL.Abstract.DASHBOARD;
 using ERPWebAPI.BL.Abstract.GRAPH;
@@ -25,6 +23,8 @@ using ERPWebAPI.BL.Concrete.RPT;
 using ERPWebAPI.BL.Concrete.Session;
 using ERPWebAPI.BL.Concrete.SYS;
 using ERPWebAPI.BL.Concrete.TA;
+using ERPWebAPI.Core.Utilities.Interceptors;
+using ERPWebAPI.Core.Utilities.Security.JWT;
 using ERPWebAPI.DAL.Abstract;
 using ERPWebAPI.DAL.Abstract.DASHBOARD;
 using ERPWebAPI.DAL.Abstract.GRAPH;
@@ -348,10 +348,6 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_TorkFormManager>().As<IOHS_TorkFormService<OHS_TorkForm, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TorkFormScoreResultDal>().As<IOHS_TorkFormScoreResultDal>().SingleInstance();
             builder.RegisterType<OHS_TorkFormScoreResultManager>().As<IOHS_TorkFormScoreResultService<OHS_TorkFormScoreResult, SqlResult>>().SingleInstance();
-            builder.RegisterType<OHS_TrainingListDal>().As<IOHS_TrainingListDal>().SingleInstance();
-            builder.RegisterType<OHS_TrainingListManager>().As<IOHS_TrainingListService<OHS_TrainingList, SqlResult>>().SingleInstance();
-            builder.RegisterType<OHS_TrainingParticipantListDal>().As<IOHS_TrainingParticipantListDal>().SingleInstance();
-            builder.RegisterType<OHS_TrainingParticipantListManager>().As<IOHS_TrainingParticipantListService<OHS_TrainingParticipantList, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_CompanyDal>().As<IOHS_CompanyDal>().SingleInstance();
             builder.RegisterType<OHS_CompanyManager>().As<IOHS_CompanyService<OHS_Company, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_JobDal>().As<IOHS_JobDal>().SingleInstance();
@@ -386,6 +382,34 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_DangerClassManager>().As<IOHS_DangerClassService<OHS_DangerClass, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_NaceCodeDal>().As<IOHS_NaceCodeDal>().SingleInstance();
             builder.RegisterType<OHS_NaceCodeManager>().As<IOHS_NaceCodeService<OHS_NaceCode, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingListDal>().As<IOHS_TrainingListDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingListManager>().As<IOHS_TrainingListService<OHS_TrainingList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingParticipantListDal>().As<IOHS_TrainingParticipantListDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingParticipantListManager>().As<IOHS_TrainingParticipantListService<OHS_TrainingParticipantList, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainerDal>().As<IOHS_TrainerDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainerManager>().As<IOHS_TrainerService<OHS_Trainer, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingCertificateDal>().As<IOHS_TrainingCertificateDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingCertificateManager>().As<IOHS_TrainingCertificateService<OHS_TrainingCertificate, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingMandatoryDurationDal>().As<IOHS_TrainingMandatoryDurationDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingMandatoryDurationManager>().As<IOHS_TrainingMandatoryDurationService<OHS_TrainingMandatoryDuration, SqlResult>>().SingleInstance();
+            //builder.RegisterType<OHS_TrainingPlanDal>().As<IOHS_TrainingPlanDal>().SingleInstance();
+            //builder.RegisterType<OHS_TrainingPlanManager>().As<IOHS_TrainingPlanService<OHS_TrainingPlan, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingRepetitionPeriodDal>().As<IOHS_TrainingRepetitionPeriodDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingRepetitionPeriodManager>().As<IOHS_TrainingRepetitionPeriodService<OHS_TrainingRepetitionPeriod, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionDal>().As<IOHS_TrainingSessionDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionManager>().As<IOHS_TrainingSessionService<OHS_TrainingSession, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionAbsentDal>().As<IOHS_TrainingSessionAbsentDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionAbsentManager>().As<IOHS_TrainingSessionAbsentService<OHS_TrainingSessionAbsent, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionParticipantDal>().As<IOHS_TrainingSessionParticipantDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionParticipantManager>().As<IOHS_TrainingSessionParticipantService<OHS_TrainingSessionParticipant, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSubjectDal>().As<IOHS_TrainingSubjectDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSubjectManager>().As<IOHS_TrainingSubjectService<OHS_TrainingSubject, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingTopicDal>().As<IOHS_TrainingTopicDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingTopicManager>().As<IOHS_TrainingTopicService<OHS_TrainingTopic, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingTopicGroupDal>().As<IOHS_TrainingTopicGroupDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingTopicGroupManager>().As<IOHS_TrainingTopicGroupService<OHS_TrainingTopicGroup, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingTypeDal>().As<IOHS_TrainingTypeDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingTypeManager>().As<IOHS_TrainingTypeService<OHS_TrainingType, SqlResult>>().SingleInstance();
 
             #endregion OHS
 

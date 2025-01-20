@@ -1,10 +1,6 @@
-﻿using ERPWebAPI.BL.Abstract.PRF;
-using ERPWebAPI.EL.Concrete.PRF;
-using ERPWebAPI.EL.Concrete;
+﻿using ERPWebAPI.BL.Abstract.RPT;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using ERPWebAPI.BL.Abstract.RPT;
 
 namespace ERPWebAPI.Controllers.RPT
 {
@@ -23,7 +19,7 @@ namespace ERPWebAPI.Controllers.RPT
         //[Authorize(Roles = "DataReader,Admin")]
         //[Authorize(Roles = "PRF,Admin")]
         [AllowAnonymous]
-        public IActionResult GetAll([FromRoute] string module, [FromRoute] string target,[FromRoute] string parameters)
+        public IActionResult GetAll([FromRoute] string module, [FromRoute] string target, [FromRoute] string parameters)
         {
             var result = rPT_DynamicReportResultService.GetDynamicReportResultMng(module, target, parameters);
             if (result.IsSuccess)

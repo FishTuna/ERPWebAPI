@@ -1,7 +1,6 @@
-﻿
-using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 
-namespace Core.DataAccess
+namespace ERPWebAPI.Core.DataAccess
 {
     public interface ICommonDalOperations<T, TSqlResults>
         where T : class, IEntity, new()

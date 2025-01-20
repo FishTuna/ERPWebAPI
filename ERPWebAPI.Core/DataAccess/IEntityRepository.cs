@@ -1,7 +1,7 @@
-﻿using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 using System.Linq.Expressions;
 
-namespace Core.DataAccess
+namespace ERPWebAPI.Core.DataAccess
 {
     //generic constraint
     //referance tip olmalı

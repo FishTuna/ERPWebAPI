@@ -1,6 +1,7 @@
 ﻿using ERPWebAPI.EL.Concrete.RPT;
 using ERPWebAPI.EL.Concrete;
 using Microsoft.EntityFrameworkCore;
+using ERPWebAPI.DAL.Abstract.RPT;
 
 namespace ERPWebAPI.DAL.Concrete.RPT
 {

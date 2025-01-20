@@ -1,5 +1,5 @@
-﻿using Core.DataAccess.EntityFramework;
-using Core.Entities.Concrete;
+﻿using ERPWebAPI.Core.DataAccess.EntityFramework;
+using ERPWebAPI.Core.Entities.Concrete;
 using ERPWebAPI.DAL.Abstract;
 
 namespace ERPWebAPI.DAL.Concrete

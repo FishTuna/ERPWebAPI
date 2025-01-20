@@ -1,11 +1,11 @@
-﻿using Core.CrossCuttingConcerns.Caching;
-using Core.CrossCuttingConcerns.Caching.Microsoft;
-using Core.Utilities.IoC;
+﻿using ERPWebAPI.Core.CrossCuttingConcerns.Caching;
+using ERPWebAPI.Core.CrossCuttingConcerns.Caching.Microsoft;
+using ERPWebAPI.Core.Utilities.IoC;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics;
 
-namespace Core.DependencyResolver
+namespace ERPWebAPI.Core.DependencyResolver
 {
     public class CoreModule : ICoreModule
     {

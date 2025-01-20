@@ -1,6 +1,6 @@
-﻿using Core.Utilities.Results;
+﻿using ERPWebAPI.Core.Utilities.Results;
 
-namespace Core.BL
+namespace ERPWebAPI.Core.BL
 {
     public interface ICommonBLOperationsService<Tentity, TSqlResult>
     {

@@ -1,9 +1,9 @@
 ﻿using Castle.DynamicProxy;
-using Core.CrossCuttingConcerns.Validation;
-using Core.Utilities.Interceptors;
+using ERPWebAPI.Core.CrossCuttingConcerns.Validation;
+using ERPWebAPI.Core.Utilities.Interceptors;
 using FluentValidation;
 
-namespace Core.Aspects.Autofac.Validation
+namespace ERPWebAPI.Core.Aspects.Autofac.Validation
 {
     public class ValidationAspect : MethodInterception //Aspect
     {

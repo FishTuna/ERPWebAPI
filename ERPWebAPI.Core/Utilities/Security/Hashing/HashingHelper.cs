@@ -2,7 +2,7 @@
 using System.Text;
 
 
-namespace Core.Utilities.Security.Hashing
+namespace ERPWebAPI.Core.Utilities.Security.Hashing
 {
     public class HashingHelper
     {

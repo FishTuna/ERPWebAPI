@@ -1,6 +1,6 @@
-﻿using Core.Entities.Concrete;
+﻿using ERPWebAPI.Core.Entities.Concrete;
 
-namespace Core.Utilities.Security.Session
+namespace ERPWebAPI.Core.Utilities.Security.Session
 {
     public class SessionHelper : ISessionHelper
     {

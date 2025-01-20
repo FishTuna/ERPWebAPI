@@ -1,11 +1,11 @@
 ﻿using Castle.DynamicProxy;
-using Core.Utilities.Interceptors;
-using Core.Utilities.IoC;
+using ERPWebAPI.Core.Utilities.Interceptors;
+using ERPWebAPI.Core.Utilities.IoC;
 using Microsoft.Extensions.DependencyInjection;
 using System.Diagnostics;
 
 
-namespace Core.Aspects.Autofac.Performance
+namespace ERPWebAPI.Core.Aspects.Autofac.Performance
 {
     public class PerformanceAspect : MethodInterception
     {

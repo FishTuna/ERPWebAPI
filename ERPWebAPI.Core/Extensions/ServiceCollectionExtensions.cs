@@ -1,8 +1,8 @@
-﻿using Core.Utilities.IoC;
+﻿using ERPWebAPI.Core.Utilities.IoC;
 using Microsoft.Extensions.DependencyInjection;
 
 
-namespace Core.Extensions
+namespace ERPWebAPI.Core.Extensions
 {
     public static class ServiceCollectionExtensions
     {

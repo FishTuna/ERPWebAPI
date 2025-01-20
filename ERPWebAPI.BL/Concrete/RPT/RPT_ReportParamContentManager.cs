@@ -1,8 +1,9 @@
-﻿using Core.Utilities.Results;
-using ERPWebAPI.BL.Abstract.RPT;
+﻿using ERPWebAPI.BL.Abstract.RPT;
 using ERPWebAPI.BL.Constants;
 using ERPWebAPI.EL.Concrete.RPT;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.DAL.Abstract.RPT;
+using ERPWebAPI.Core.Utilities.Results;
 
 namespace ERPWebAPI.BL.Concrete.RPT
 {

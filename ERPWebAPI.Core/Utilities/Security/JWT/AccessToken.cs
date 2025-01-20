@@ -1,6 +1,4 @@
-﻿
-
-namespace Core.Utilities.Security.JWT
+﻿namespace ERPWebAPI.Core.Utilities.Security.JWT
 {
     public class AccessToken
     {

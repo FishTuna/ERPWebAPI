@@ -1,4 +1,4 @@
-﻿namespace Core.Utilities.Security.Session
+﻿namespace ERPWebAPI.Core.Utilities.Security.Session
 {
     public interface ISessionHelper
     {

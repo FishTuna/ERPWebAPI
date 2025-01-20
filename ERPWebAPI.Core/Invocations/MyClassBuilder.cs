@@ -2,14 +2,14 @@
 using System.Reflection.Emit;
 
 
-namespace Core.Invocations
+namespace ERPWebAPI.Core.Invocations
 {
     public class MyClassBuilder
     {
         AssemblyName asemblyName;
         public MyClassBuilder(string ClassName)
         {
-            this.asemblyName = new AssemblyName(ClassName);
+            asemblyName = new AssemblyName(ClassName);
         }
         public object CreateObject(string[] PropertyNames, Type[] Types)
         {
@@ -18,8 +18,8 @@ namespace Core.Invocations
             //    Console.WriteLine("The number of property names should match their corresopnding types number");
             //}
 
-            TypeBuilder DynamicClass = this.CreateClass();
-            this.CreateConstructor(DynamicClass);
+            TypeBuilder DynamicClass = CreateClass();
+            CreateConstructor(DynamicClass);
             for (int ind = 0; ind < PropertyNames.Count(); ind++)
                 CreateProperty(DynamicClass, PropertyNames[ind], Types[ind]);
             Type type = DynamicClass.CreateType();
@@ -28,9 +28,9 @@ namespace Core.Invocations
         }
         private TypeBuilder CreateClass()
         {
-            AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(this.asemblyName, AssemblyBuilderAccess.Run);
+            AssemblyBuilder assemblyBuilder = AssemblyBuilder.DefineDynamicAssembly(asemblyName, AssemblyBuilderAccess.Run);
             ModuleBuilder moduleBuilder = assemblyBuilder.DefineDynamicModule("MainModule");
-            TypeBuilder typeBuilder = moduleBuilder.DefineType(this.asemblyName.FullName
+            TypeBuilder typeBuilder = moduleBuilder.DefineType(asemblyName.FullName
                                 , TypeAttributes.Public |
                                 TypeAttributes.Class |
                                 TypeAttributes.AutoClass |

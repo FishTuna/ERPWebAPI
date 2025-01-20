@@ -1,8 +1,7 @@
 ﻿using ERPWebAPI.BL.Abstract.LGN;
-using ERPWebAPI.EL.Concrete.LGN;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.LGN;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ERPWebAPI.Controllers.LGN
