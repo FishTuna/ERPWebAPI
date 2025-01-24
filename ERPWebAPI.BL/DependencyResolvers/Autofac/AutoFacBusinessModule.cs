@@ -410,6 +410,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<OHS_TrainingTopicGroupManager>().As<IOHS_TrainingTopicGroupService<OHS_TrainingTopicGroup, SqlResult>>().SingleInstance();
             builder.RegisterType<OHS_TrainingTypeDal>().As<IOHS_TrainingTypeDal>().SingleInstance();
             builder.RegisterType<OHS_TrainingTypeManager>().As<IOHS_TrainingTypeService<OHS_TrainingType, SqlResult>>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionTopicDal>().As<IOHS_TrainingSessionTopicDal>().SingleInstance();
+            builder.RegisterType<OHS_TrainingSessionTopicManager>().As<IOHS_TrainingSessionTopicService<OHS_TrainingSessionTopic, SqlResult>>().SingleInstance();
 
             #endregion OHS
 

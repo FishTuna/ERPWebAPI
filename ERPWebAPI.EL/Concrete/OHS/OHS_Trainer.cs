@@ -8,6 +8,7 @@ namespace ERPWebAPI.EL.Concrete.OHS
         [Key]
         public int TrainerId { get; set; }
         public bool IsOutSourced { get; set; }
+        public bool IsPredefined { get; set; }
         public string? SocialSecurityNumber { get; set; }
         public string? TrainerName { get; set; }
         public string? TrainerTitle { get; set; }

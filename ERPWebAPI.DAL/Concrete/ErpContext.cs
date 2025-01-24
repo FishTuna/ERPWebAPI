@@ -214,6 +214,8 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<OHS_TrainingTopic> OhsTrainingTopics { get; set; }
         public DbSet<OHS_TrainingTopicGroup> OhsTrainingTopicGroups { get; set; }
         public DbSet<OHS_TrainingType> OhsTrainingTypes { get; set; }
+        public DbSet<OHS_TrainingSessionTopic> OhsTrainingSessionTopics { get; set; }
+
 
 
         #endregion OHS
