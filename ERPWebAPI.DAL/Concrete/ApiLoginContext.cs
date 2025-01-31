@@ -15,6 +15,7 @@ namespace ERPWebAPI.DAL.Concrete
                          $"User ID = {PasswordCodder.Base64Decode(ApiDbConnectionInfo.User)}; " +
                          $"Password = {PasswordCodder.Base64Decode(ApiDbConnectionInfo.Password)};" +
                          $"Encrypt={ApiDbConnectionInfo.Encrypt}");
+
         }
         public DbSet<OperationClaim> tbl_OperationClaims { get; set; }
         public DbSet<tbl_Users> tbl_Users { get; set; }

@@ -12,6 +12,9 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public string? TrainingComment { get; set; }
         public int TrainingOrganizerId { get; set; }
         public string? TrainingOrganizer { get; set; }
+        public short TrainingTypeId { get; set; }
+        public string? TrainingType { get; set; }
+        public bool IsCertificated { get; set; }
         public DateTime TrainingBegining { get; set; }
         public DateTime TrainingEnding { get; set; }
         public short TrainingDuration { get; set; }

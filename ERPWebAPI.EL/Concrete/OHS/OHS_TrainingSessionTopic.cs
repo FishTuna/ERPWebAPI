@@ -11,6 +11,7 @@ namespace ERPWebAPI.EL.Concrete.OHS
         public int Id { get; set; }
         public int SessionId { get; set; }
         public short TopicId { get; set; }
+        public string? ManualTopic { get; set; }
         public string? UserEmployee { get; set; }
         public DateTime? TransactionDate { get; set; }
     }
