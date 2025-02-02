@@ -18,6 +18,7 @@ namespace ERPWebAPI.Controllers.OHS
             _testQuestionService = testQuestionService;
 
         }
+
         [HttpGet("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataReader,Admin")]
         [Authorize(Roles = "OHS,Admin")]

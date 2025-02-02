@@ -253,8 +253,8 @@ namespace ERPWebAPI.BL.DependencyResolvers.Autofac
             builder.RegisterType<SYS_PaperworkDepartmentManager>().As<ISYS_PaperworkDepartmentService<SYS_PaperworkDepartment, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_PaperworkTypeDal>().As<ISYS_PaperworkTypeDal>().SingleInstance();
             builder.RegisterType<SYS_PaperworkTypeManager>().As<ISYS_PaperworkTypeService<SYS_PaperworkType, SqlResult>>().SingleInstance();
-            builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
-            builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerDal>().As<ISYS_StandardAnswerDal>().SingleInstance();
+            builder.RegisterType<SYS_StandardAnswerManager>().As<ISYS_StandardAnswerService<SYS_StandardAnswer, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_StandardAnswerTypeDal>().As<ISYS_StandardAnswerTypeDal>().SingleInstance();
             builder.RegisterType<SYS_StandardAnswerTypeManager>().As<ISYS_StandardAnswerTypeService<SYS_StandardAnswerType, SqlResult>>().SingleInstance();
             builder.RegisterType<SYS_PropGraphListDal>().As<ISYS_PropGraphListDal>().SingleInstance();
