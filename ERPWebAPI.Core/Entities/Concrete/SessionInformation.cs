@@ -1,5 +1,6 @@
-﻿
-namespace Core.Entities.Concrete
+﻿using ERPWebAPI.Core.Entities;
+
+namespace ERPWebAPI.Core.Entities.Concrete
 {
 
     public class SessionInformation : IEntity

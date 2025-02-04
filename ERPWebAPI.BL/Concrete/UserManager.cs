@@ -1,5 +1,5 @@
-﻿using Core.Entities.Concrete;
-using ERPWebAPI.BL.Abstract;
+﻿using ERPWebAPI.BL.Abstract;
+using ERPWebAPI.Core.Entities.Concrete;
 using ERPWebAPI.DAL.Abstract;
 
 

@@ -1,4 +1,4 @@
-﻿using Core.BL;
+﻿using ERPWebAPI.Core.BL;
 
 
 namespace ERPWebAPI.BL.Abstract.HR

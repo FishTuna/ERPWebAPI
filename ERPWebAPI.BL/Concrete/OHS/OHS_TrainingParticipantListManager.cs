@@ -1,6 +1,7 @@
-﻿using Core.Utilities.Results;
+﻿
 using ERPWebAPI.BL.Abstract.OHS;
 using ERPWebAPI.BL.Constants;
+using ERPWebAPI.Core.Utilities.Results;
 using ERPWebAPI.DAL.Abstract.OHS;
 using ERPWebAPI.EL.Concrete;
 using ERPWebAPI.EL.Concrete.OHS;

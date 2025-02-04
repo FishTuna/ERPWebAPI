@@ -1,5 +1,5 @@
-﻿using Core.Entities.Concrete;
-using Core.Invocations;
+﻿using ERPWebAPI.Core.Entities.Concrete;
+using ERPWebAPI.Core.Invocations;
 using ERPWebAPI.EL.Concrete;
 using ERPWebAPI.EL.Concrete.DASHBOARD;
 using ERPWebAPI.EL.Concrete.GRAPHS;
@@ -145,6 +145,11 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<LGN_tbl_Authority_Role> LgnAuthorityRoles { get; set; }
         public DbSet<LGN_tbl_Authority_Field> LgnAuthorityFields { get; set; }
         public DbSet<LGN_Field> LgnFields { get; set; }
+        public DbSet<LGN_PasswordPolicy> LgnPasswordPolicies { get; set; }
+        public DbSet<LGN_RoleField> LgnRoleFields { get; set; }
+        public DbSet<LGN_RoleModule> LgnRoleModules { get; set; }
+        public DbSet<LGN_RoleMenu> LgnRoleMenus { get; set; }
+        public DbSet<LGN_RoleSection> LgnRoleSections { get; set; }
 
 
         #endregion
@@ -164,9 +169,7 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<OHS_cmb_EmergencyJob> OhsEmergencyJobs { get; set; }
         public DbSet<OHS_cmb_EmergencyRegion> OhsEmergencyRegions { get; set; }
         public DbSet<OHS_tbl_EmergencyEmpJob> OhsEmergencyEmpJobs { get; set; }
-        public DbSet<OHS_tbl_EmployeeList> OhsEmployeesList { get; set; }
-        public DbSet<OHS_TrainingParticipantList> OhsTrainingParticipantList { get; set; }
-        public DbSet<OHS_TrainingList> OhsTrainingList { get; set; }
+        public DbSet<OHS_tbl_EmployeeList> OhsEmployeesList { get; set; }        
         public DbSet<OHS_TorkFormScoreResult> OhsTorkFormScoreResults { get; set; }
         public DbSet<OHS_TorkForm> OhsTorkForms { get; set; }
         public DbSet<OHS_TestQuestionGroup> OhsTestQuestionGroups { get; set; }
@@ -198,6 +201,23 @@ namespace ERPWebAPI.DAL.Concrete
         public DbSet<OHS_IndustrySection> OhsIndustrySections { get; set; }
         public DbSet<OHS_NaceCode> OhsNaceCodes { get; set; }
         public DbSet<OHS_DangerClass> OhsDangerClasses { get; set; }
+        public DbSet<OHS_Trainer> OhsTrainers { get; set; }
+        public DbSet<OHS_TrainingCertificate> OhsTrainingCertificates { get; set; }
+        public DbSet<OHS_TrainingList> OhsTrainingList { get; set; }
+        public DbSet<OHS_TrainingMandatoryDuration> OhsTrainingMandatoryDurations { get; set; }
+        public DbSet<OHS_TrainingParticipantList> OhsTrainingParticipantList { get; set; }
+        public DbSet<OHS_TrainingRepetitionPeriod> OhsTrainingRepetitionPeriods { get; set; }
+        public DbSet<OHS_TrainingSessionAbsent> OhsTrainingSessionAbsents { get; set; }
+        public DbSet<OHS_TrainingSession> OhsTrainingSessions { get; set; }
+        public DbSet<OHS_TrainingSessionParticipant> OhsTrainingSessionParticipants { get; set; }
+        public DbSet<OHS_TrainingSubject> OhsTrainingSubjects { get; set; }
+        public DbSet<OHS_TrainingTopic> OhsTrainingTopics { get; set; }
+        public DbSet<OHS_TrainingTopicGroup> OhsTrainingTopicGroups { get; set; }
+        public DbSet<OHS_TrainingType> OhsTrainingTypes { get; set; }
+        public DbSet<OHS_TrainingSessionTopic> OhsTrainingSessionTopics { get; set; }
+        public DbSet<OHS_TrainingPlan> OhsTrainingPlans { get; set; }
+
+
 
         #endregion OHS
 

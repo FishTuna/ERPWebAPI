@@ -1,7 +1,7 @@
 ﻿using Castle.DynamicProxy;
 using System.Reflection;
 
-namespace Core.Utilities.Interceptors
+namespace ERPWebAPI.Core.Utilities.Interceptors
 {
     public class AspectInterceptorSelector : IInterceptorSelector
     {

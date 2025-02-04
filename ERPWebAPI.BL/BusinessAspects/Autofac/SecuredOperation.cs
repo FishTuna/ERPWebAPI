@@ -1,8 +1,8 @@
 ﻿using Castle.DynamicProxy;
-using Core.Extensions;
-using Core.Utilities.Interceptors;
-using Core.Utilities.IoC;
 using ERPWebAPI.BL.Constants;
+using ERPWebAPI.Core.Extensions;
+using ERPWebAPI.Core.Utilities.Interceptors;
+using ERPWebAPI.Core.Utilities.IoC;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.DependencyInjection;
 

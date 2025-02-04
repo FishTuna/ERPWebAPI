@@ -1,5 +1,4 @@
-﻿
-using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.SYS
@@ -7,9 +6,12 @@ namespace ERPWebAPI.EL.Concrete.SYS
     public class SYS_StandardAnswer :IEntity
     {
         [Key]
+        public int Id { get; set; }
         public short AnswerId { get; set; }
-        public string Answer {  get; set; }
-        public string UserEmployee {  get; set; }
-        public DateTime TransactionDate { get; set; }
+        public string? Answer {  get; set; }
+        public byte AnswerTypeId { get; set; }
+        public string? AnswerType { get; set; }
+        public string? UserEmployee {  get; set; }
+        public DateTime? TransactionDate { get; set; }
     }
 }

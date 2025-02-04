@@ -1,4 +1,4 @@
-﻿using Core.Entities.Concrete;
+﻿using ERPWebAPI.Core.Entities.Concrete;
 
 
 namespace ERPWebAPI.BL.Abstract

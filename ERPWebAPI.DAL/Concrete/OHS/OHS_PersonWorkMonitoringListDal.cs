@@ -1,6 +1,6 @@
 ﻿using ERPWebAPI.DAL.Abstract.OHS;
-using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.OHS;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete.OHS

@@ -10,9 +10,9 @@ namespace ERPWebAPI.Controllers.LGN
     [ApiController]
     public class AuthoritySectionController : ControllerBase
     {
-        readonly ILGN_tbl_AuthoritySectionService<LGN_cmb_Section, SqlResult> _tbl_AuthoritySectionService;
+        readonly ILGN_tbl_AuthoritySectionService<LGN_tbl_Authority_Section, SqlResult> _tbl_AuthoritySectionService;
 
-        public AuthoritySectionController(ILGN_tbl_AuthoritySectionService<LGN_cmb_Section, SqlResult> cmb_AuthoritySectionService)
+        public AuthoritySectionController(ILGN_tbl_AuthoritySectionService<LGN_tbl_Authority_Section, SqlResult> cmb_AuthoritySectionService)
         {
             _tbl_AuthoritySectionService = cmb_AuthoritySectionService;
         }

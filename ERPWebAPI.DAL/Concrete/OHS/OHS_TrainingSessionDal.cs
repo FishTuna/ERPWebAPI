@@ -1,19 +1,17 @@
-﻿
-
-using ERPWebAPI.DAL.Concrete;
-using ERPWebAPI.EL.Concrete.OHS;
+﻿using ERPWebAPI.DAL.Abstract.OHS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.OHS;
 using Microsoft.EntityFrameworkCore;
 
-namespace ERPWebAPI.DAL.Abstract.OHS
+namespace ERPWebAPI.DAL.Concrete.OHS
 {
-    public class OHS_DangerClassDal : IOHS_DangerClassDal
+    public class OHS_TrainingSessionDal : IOHS_TrainingSessionDal
     {
-        public List<OHS_DangerClass> GetAllDataDal(string module, string target, string point, string parameters)
+        public List<OHS_TrainingSession> GetAllDataDal(string module, string target, string point, string parameters)
         {
             using (ErpContext context = new ErpContext())
             {
-                var result = context.OhsDangerClasses.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
+                var result = context.OhsTrainingSessions.FromSqlRaw($"exec {module}_{target}_{point} {parameters}").ToList();
                 return result;
             }
         }

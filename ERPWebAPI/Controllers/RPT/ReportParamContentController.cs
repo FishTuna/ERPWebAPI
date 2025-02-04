@@ -10,7 +10,7 @@ namespace ERPWebAPI.Controllers.RPT
     [ApiController]
     public class ReportParamContentController : ControllerBase
     {
-        readonly IRPT_ReportParamContentService<RPT_ReportParamContent,SqlResult> rPT_ReportParamContentService;
+        readonly IRPT_ReportParamContentService<RPT_ReportParamContent, SqlResult> rPT_ReportParamContentService;
 
         public ReportParamContentController(IRPT_ReportParamContentService<RPT_ReportParamContent, SqlResult> _rPT_ReportParamContentService)
         {

@@ -1,5 +1,5 @@
-﻿using Core.Entities.Concrete;
-using Core.Invocations;
+﻿using ERPWebAPI.Core.Entities.Concrete;
+using ERPWebAPI.Core.Invocations;
 using Microsoft.EntityFrameworkCore;
 
 namespace ERPWebAPI.DAL.Concrete
@@ -15,6 +15,7 @@ namespace ERPWebAPI.DAL.Concrete
                          $"User ID = {PasswordCodder.Base64Decode(ApiDbConnectionInfo.User)}; " +
                          $"Password = {PasswordCodder.Base64Decode(ApiDbConnectionInfo.Password)};" +
                          $"Encrypt={ApiDbConnectionInfo.Encrypt}");
+
         }
         public DbSet<OperationClaim> tbl_OperationClaims { get; set; }
         public DbSet<tbl_Users> tbl_Users { get; set; }

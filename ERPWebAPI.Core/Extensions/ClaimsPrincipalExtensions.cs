@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
 
 
-namespace Core.Extensions
+namespace ERPWebAPI.Core.Extensions
 {
     public static class ClaimsPrincipalExtensions
     {

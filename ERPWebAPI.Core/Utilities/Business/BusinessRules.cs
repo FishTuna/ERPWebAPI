@@ -1,6 +1,6 @@
-﻿using Core.Utilities.Results;
+﻿using ERPWebAPI.Core.Utilities.Results;
 
-namespace Core.Utilities.Business
+namespace ERPWebAPI.Core.Utilities.Business
 {
     public class BusinessRules
     {

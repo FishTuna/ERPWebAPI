@@ -1,5 +1,4 @@
-﻿
-namespace Core.Entities.Concrete
+﻿namespace ERPWebAPI.Core.Entities.Concrete
 {
     public class DbConnectionInfo
     {

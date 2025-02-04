@@ -1,5 +1,4 @@
-﻿
-using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.OHS
@@ -7,25 +6,30 @@ namespace ERPWebAPI.EL.Concrete.OHS
     public class OHS_TrainingList:IEntity
     {
         [Key]
-        public int OhsTrainingId { get; set; }
-        public string OhsTrainingName { get; set; }
-        public bool IsInstuctorOutsourced { get; set; }
-        public string? InstructorSocialSecurityNumber { get; set; }
-        public string? InstructorName { get; set; }
-        public string? InstructorTitle { get; set; }
+        public int Id { get; set; }
+        public int OhsSubjectId { get; set; }
+        public string? OhsSubject { get; set; }
         public string? TrainingComment { get; set; }
-        public string? TrainingLocation { get; set; }
         public int TrainingOrganizerId { get; set; }
         public string? TrainingOrganizer { get; set; }
+        public short TrainingTypeId { get; set; }
+        public string? TrainingType { get; set; }
         public bool IsCertificated { get; set; }
-        public int? TemplateCertificateId { get; set; }
-        public string? TemplateCertificateName { get; set; }
         public DateTime TrainingBegining { get; set; }
         public DateTime TrainingEnding { get; set; }
+        public short TrainingDuration { get; set; }
+        public byte DatePeriodTypeId { get; set; }
+        public string? DatePeriodType { get; set; }
+        public bool IsOnline { get; set; }
+        public bool IsAtOutSideLocation { get; set; }
+        public string? TrainingLocation { get; set; }
+        public string? Method { get; set; }
+        public string? Regulation { get; set; }
         public byte TraningStatusId { get; set; }
         public string? TrainingStatus { get; set; }
         public string? UserEmployee { get; set; }
         public DateTime? TransactionDate { get; set; }
+
 
     }
 }

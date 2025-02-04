@@ -1,6 +1,4 @@
-﻿
-
-using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 
 namespace ERPWebAPI.EL.Dtos
 {

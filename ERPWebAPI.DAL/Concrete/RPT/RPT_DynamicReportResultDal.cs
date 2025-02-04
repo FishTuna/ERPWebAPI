@@ -1,5 +1,6 @@
 ﻿
-using Core.Utilities.Results;
+
+using ERPWebAPI.Core.Utilities.Results;
 using ERPWebAPI.DAL.Abstract.RPT;
 using ERPWebAPI.EL.Concrete.RPT;
 using Microsoft.EntityFrameworkCore;

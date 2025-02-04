@@ -1,8 +1,9 @@
-﻿using Core.Entities;
+﻿using ERPWebAPI.Core.DataAccess;
+using ERPWebAPI.Core.Entities;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Expressions;
 
-namespace Core.DataAccess.EntityFramework
+namespace ERPWebAPI.Core.DataAccess.EntityFramework
 {
     public class EfEntityRepositoryBase<TEntity, TContext> : IEntityRepository<TEntity>
         where TEntity : class, IEntity, new()

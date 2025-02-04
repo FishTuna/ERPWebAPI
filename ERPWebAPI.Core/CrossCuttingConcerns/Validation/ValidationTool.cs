@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Core.CrossCuttingConcerns.Validation
+namespace ERPWebAPI.Core.CrossCuttingConcerns.Validation
 {
     public static class ValidationTool
     {

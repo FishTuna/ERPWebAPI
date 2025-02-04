@@ -1,4 +1,4 @@
-﻿namespace Core.Utilities.Results
+﻿namespace ERPWebAPI.Core.Utilities.Results
 {
     public class SuccessResult : Result
     {

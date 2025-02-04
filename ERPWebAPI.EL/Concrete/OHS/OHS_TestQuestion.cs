@@ -1,6 +1,4 @@
-﻿
-
-using Core.Entities;
+﻿using ERPWebAPI.Core.Entities;
 using System.ComponentModel.DataAnnotations;
 
 namespace ERPWebAPI.EL.Concrete.OHS
@@ -10,8 +8,8 @@ namespace ERPWebAPI.EL.Concrete.OHS
         [Key]
         public int QuestionId { get; set; }
         public short QuestionNumber { get; set; }
-        public string Question { get; set; }
-        public int TestId { get; set; }
+        public string? Question { get; set; }
+        public short TestId { get; set; }
         public string? TestName { get; set; }
         public short QuestionGroupId { get; set; }
         public string? QuestionGroup { get; set; }

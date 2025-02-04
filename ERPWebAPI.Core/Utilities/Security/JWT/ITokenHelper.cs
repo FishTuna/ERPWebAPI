@@ -1,7 +1,7 @@
-﻿using Core.Entities.Concrete;
+﻿using ERPWebAPI.Core.Entities.Concrete;
 
 
-namespace Core.Utilities.Security.JWT
+namespace ERPWebAPI.Core.Utilities.Security.JWT
 {
     public interface ITokenHelper
     {

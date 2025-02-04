@@ -1,4 +1,4 @@
-﻿using Core.DataAccess;
+﻿using ERPWebAPI.Core.DataAccess;
 using ERPWebAPI.EL.Concrete.LGN;
 
 

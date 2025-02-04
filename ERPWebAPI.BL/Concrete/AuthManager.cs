@@ -1,8 +1,9 @@
-﻿using Core.Entities.Concrete;
-using Core.Utilities.Results;
-using Core.Utilities.Security.Hashing;
-using Core.Utilities.Security.JWT;
+﻿
 using ERPWebAPI.BL.Abstract;
+using ERPWebAPI.Core.Entities.Concrete;
+using ERPWebAPI.Core.Utilities.Results;
+using ERPWebAPI.Core.Utilities.Security.Hashing;
+using ERPWebAPI.Core.Utilities.Security.JWT;
 using ERPWebAPI.EL.Dtos;
 
 

@@ -1,7 +1,7 @@
 ﻿using Castle.DynamicProxy;
-using Core.CrossCuttingConcerns.Caching;
-using Core.Utilities.Interceptors;
-using Core.Utilities.IoC;
+using ERPWebAPI.Core.CrossCuttingConcerns.Caching;
+using ERPWebAPI.Core.Utilities.Interceptors;
+using ERPWebAPI.Core.Utilities.IoC;
 using Microsoft.Extensions.DependencyInjection;
 
 namespace ERPWebAPI.BL.Concrete

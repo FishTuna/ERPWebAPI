@@ -1,7 +1,7 @@
 ﻿using Microsoft.IdentityModel.Tokens;
 
 
-namespace Core.Utilities.Security.Encryption
+namespace ERPWebAPI.Core.Utilities.Security.Encryption
 {
     public class SigningCredentialsHelper
     {

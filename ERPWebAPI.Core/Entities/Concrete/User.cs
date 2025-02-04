@@ -1,7 +1,8 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using ERPWebAPI.Core.Entities;
+using System.ComponentModel.DataAnnotations;
 
 
-namespace Core.Entities.Concrete
+namespace ERPWebAPI.Core.Entities.Concrete
 {
     public class tbl_Users : IEntity
     {

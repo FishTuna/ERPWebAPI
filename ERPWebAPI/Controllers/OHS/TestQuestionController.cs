@@ -1,6 +1,6 @@
 ﻿using ERPWebAPI.BL.Abstract.OHS;
-using ERPWebAPI.EL.Concrete.OHS;
 using ERPWebAPI.EL.Concrete;
+using ERPWebAPI.EL.Concrete.OHS;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +18,7 @@ namespace ERPWebAPI.Controllers.OHS
             _testQuestionService = testQuestionService;
 
         }
+
         [HttpGet("{module}/{target}/{point}/{parameters}")]
         [Authorize(Roles = "DataReader,Admin")]
         [Authorize(Roles = "OHS,Admin")]

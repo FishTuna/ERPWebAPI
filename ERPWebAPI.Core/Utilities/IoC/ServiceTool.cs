@@ -1,7 +1,7 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
 
 
-namespace Core.Utilities.IoC
+namespace ERPWebAPI.Core.Utilities.IoC
 {
     public static class ServiceTool
     {
